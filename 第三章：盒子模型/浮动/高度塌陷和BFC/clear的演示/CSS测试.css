@@ -1,0 +1,39 @@
+div{        /* 设置字体大小，方便对元素进行标识 */
+    font-size: 30px;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: #25a4bb;
+    float: left;
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: #0F7812;
+
+/*
+    - 由于box1的浮动，导致box3位置的上移，使其位置发生了改变
+
+    - 可以通过clear属性来清除浮动元素对当前元素的影响
+        - 可选值
+            - left：清除左侧浮动元素对当前元素的影响
+            - right：清除右侧浮动元素对当前元素的影响
+            - both：清除两侧中影响最大的一侧
+
+        - 原理：设置清除浮动以后，浏览器会自动为元素设置一个上外边距，使其位置不受其他元素的影响
+*/
+    /* clear: left;         清除左侧浮动元素的影响，指1 */
+    /* clear: right;        清除右侧浮动元素的影响，指2 */
+    /* clear: both;         由于2的影响比1大，所以清除2对其的影响 */
+}
+
+
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: #c81623;
+    float: right;
+}

@@ -1,0 +1,101 @@
+/* 解决高度塌陷问题 */
+.inner::before,
+.inner::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 设置字体样式 */
+.inner a,
+.inner i,
+.inner span{
+    font-size: 12px;
+    text-decoration: none;
+    color: #999999;
+}
+
+/* 设置外部容器样式 */
+.outer{
+    width: 100%;            /* 设置宽度 */
+    line-height: 30px;      /* 跟随内容改变高度 */
+    height: 30px;           /* 将高度定死 */
+    background-color: #E3E4E5;
+    border-bottom: 1px #dddddd solid;
+}
+
+/* 设置内部容器样式 */
+.inner{
+    width: 1190px;          /* 固定宽度 */
+    margin: 0 auto;         /* 水平居中 */
+    position: relative;
+}
+
+/* 设置left的位置 */
+.left{
+    float: left;
+}
+
+/* 设置right的位置 */
+.right{
+    float: right;
+}
+
+/* 设置li的浮动样式 */
+.right li{
+    float: left;
+}
+
+/* 设置地点图标样式 */
+.city i{
+    font-size: 14px;
+    color: #f10215;
+}
+
+/* 设置城市列表的下拉样式 */
+.inner .city-list{
+    display: none;          /* 初始状态为隐藏 */
+    width: 320px;
+    height: 430px;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    /* 设置绝对定位，使其不占据页面的位置，防止把高度撑开 */
+    position: absolute;
+    top: 31px;
+}
+
+/* 设置鼠标移入，显示下拉框 */
+.inner:hover .city-list{
+    display: block;
+}
+
+/* 设置鼠标移入背景变白的效果 */
+.inner:hover .city{
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: none;
+    padding-bottom: 1px;
+}
+
+/* 设置city的效果 */
+.city{
+    border: 1px solid transparent;      /* 将边框颜色改为透明样式 */
+    border-bottom: none;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 设置鼠标移入样式，以及部分标签高亮样式 */
+.inner a:hover,
+.inner a.highlight{
+    color: #f10215;
+}
+
+/* 设置分割线 */
+.line{
+    width: 1px;
+    height: 10px;
+    background-color: #999999;
+    margin: 10px 12px 0;
+}

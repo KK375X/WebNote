@@ -1,0 +1,45 @@
+/*
+    - 固定定位
+        - 当元素的position的属性值设置为fixed时，则开启了该元素的固定定位
+        - 固定定位也是一种相对定位，大部分特点和相对定位一样
+        - 固定定位的特点：
+            - 固定定位永远参考于浏览器的视口进行定位
+            - 固定定位的元素不会随着滚动体的滚动而滚动（类似广告、弹窗）
+*/
+
+div{        /* 设置字体的大小 */
+    font-size: 50px;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #c81623;
+}
+
+.box2{      /* 为该元素设置固定定位 */
+    width: 200px;
+    height: 200px;
+    background-color: #0F7812;
+
+    /* 为该元素设置固定定位 */
+    position: absolute;
+}
+
+.box3{
+    width: 300px;
+    height: 300px;
+    background-color: #3d32bb;
+}
+
+
+
+
+
+
+
+
+
+
+
+

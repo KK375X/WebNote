@@ -1,0 +1,107 @@
+/*!* 理论部分 *!*/
+/*!* 设置外部容器，使指针按一端为原点旋转 *!*/
+/*.sec-wrapper{*/
+/*    width: 500px;*/
+/*    height: 500px;*/
+/*    animation: test 60s;*/
+/*}*/
+
+/*.sec{*/
+/*    !* 基础属性 *!*/
+/*    height: 250px;*/
+/*    width: 4px;*/
+/*    background-color: red;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*!* 设置旋转角度 *!*/
+/*@keyframes test { */
+/*    from{*/
+/*        transform: rotateZ(0);*/
+/*    }*/
+/*    to{*/
+/*        transform: rotateZ(360deg)*/
+/*    }*/
+/*}*/
+
+
+/* 实战部分 */
+/* 设置表的样式 */
+.clock{
+    /* 设置基础属性 */
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;                 /* 开启相对定位 */
+    /*background: #bbffaa;                  表盘的背景颜色 */
+
+    border-radius: 50%;                 /* 设置为圆形 */
+    border: 10px solid black;           /* 设置表盘的边框 */
+}
+
+/* 将内部全部子元素设置居中样式 */
+.clock > div{
+    position: absolute;                 /* 开启绝对定位 */
+    top: 0;                             /* 设置定位 */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* 设置动画样式 */
+@keyframes clock-running {
+    from{
+        transform: rotateZ(0);          /* 设置开始角度 */
+    }
+    to{
+        transform: rotateZ(360deg);     /* 设置结束角度 */
+    }
+}
+
+
+/* 设置时针表盘基础样式 */
+.hour-wrapper{
+    height: 60%;                        /* 设置表盘大小 */
+    width: 60%;
+    /*background: #bbffaa;*/
+    animation: clock-running 3600s infinite;    /* 开启动画，转一圈3600s */
+}
+
+/* 设置时针基础样式 */
+.hour{
+    height: 50%;                        /* 时针高度 */
+    width: 6px;                         /* 时针宽度 */
+    background-color: red;              /* 时针颜色 */
+    margin: 0 auto;                     /* 时针在表盘内居中 */
+}
+
+
+/* 设置分针表盘基础样式 */
+.min-wrapper{
+    height: 90%;                        /* 设置表盘大小 */
+    width: 90%;
+    /*background: #bbffaa;*/
+    animation: clock-running 60s steps(60) infinite;      /* 开启动画，转一圈60s */
+}
+
+/* 设置分针基础样式 */
+.min{
+    height: 50%;                        /* 时针高度 */
+    width: 6px;                         /* 时针宽度 */
+    background-color: red;              /* 时针颜色 */
+    margin: 0 auto;                     /* 时针在表盘内居中 */
+}
+
+
+/* 设置原点样式 */
+.pointer{
+    width: 20px;                        /* 设置大小 */
+    height: 20px;
+    border-radius: 50%;                 /* 设置边距 */
+    background-color: red;              /* 设置背景颜色 */
+}
+
+
+
+

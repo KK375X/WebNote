@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+    <!--
+        audio标签用来引入一个音频文件（可以是本地或者网上）
+            - 音视频文件引入时，默认是不允许用户自己控制播放停止的
+            - controls 是否允许用户控制播放
+            - autoplay 音频文件是否自动播放
+                - 如果设置了autoplay，则音乐在打开页面会自动播放，但不建议使用
+            - loop 音频是否循环播放
+    -->
+    <!-- 第一种方法：使用src指定文件路径
+            <audio src="./音视频文件/Wake.mp3" controls autoplay loop></audio>
+         第二种方法：使用source指定文件路径，可以指定多个文件，但只会执行一个文件（从上向下）
+            <audio controls>
+                <source src="./音视频文件/Wake.mp3">
+                <source src="./音视频文件/烟花.mp4">
+            </audio>
+    -->
+
+    <!--
+        video标签用来引入一个视频文件（可以是本地或者网上）
+        基本属性使用和audio一样
+        第一种方法：
+            <video src="./音视频文件/烟花.mp4" controls loop></video>
+        第二种方法：
+            <video controls loop autoplay>
+                <source src="./音视频文件/烟花.mp4">
+            </video>
+    -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*
+    HSL值
+        - H：色相（0~360）
+        - S：饱和度，颜色的浓度（0~100%）
+        - L：亮度，颜色的亮度（0~100%）
+    HSLA值
+        - HSL和上述一样
+        - A:不透明度（0~100%）
+*/
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: hsl(300, 60%, 70%);
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: hsla(300, 60%, 70%, .5);
+}

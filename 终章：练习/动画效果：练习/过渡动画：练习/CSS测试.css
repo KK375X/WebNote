@@ -1,0 +1,12 @@
+.box{
+    height: 700px;
+    width: 300px;               /* 总宽度是1200px，每个子图是300px */
+    margin: 0 auto;             /* 设置图片居中 */
+    background-image: url("过渡动画练习图.png");     /* 引入图片 */
+
+    transition: 2s steps(4);    /* 用时两秒，分四步进行 */
+}
+
+.box:hover{
+    background-position: -1200px 0;     /* 设置最终出现的位置坐标 */
+}

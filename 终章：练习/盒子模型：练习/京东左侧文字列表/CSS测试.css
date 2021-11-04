@@ -1,0 +1,31 @@
+body{       /* 设置网页的背景，方便查看 */
+    background-color: #cacaca;
+}
+.list-nav{     /* 设置基本框架样式 */
+    width: 190px;   /* 设置宽度 */
+    height: 450px;  /* 设置高度 */
+    padding: 10px 0;    /* 设置padding */
+    background-color: #daffe3;    /* 设置背景颜色 */
+}
+
+.list-nav .item{    /* 设置内部的item样式 */
+    height: 25px;   /* 设置每行的行距 */
+    /* 要让文字在父元素中水平居中，只需将父元素的line-height设置为和父元素相同的height即可 */
+    line-height: 25px;  /* 设置文字水平居中 */
+    padding-left: 15px;  /* 设置内边框距离 */
+}
+.item:hover{        /* 为item设置鼠标移入时的状态 */
+    background-color: #d9d9d9;
+}
+.item a{        /* 设置超链接的样式 */
+    font-size: 14px;    /* 设置超链接文字的大小 */
+    color: black;     /* 设置超链接文字的颜色 */
+    text-decoration: none;      /* 去除超链接的下划线 */
+}
+.item span{     /* 设置分割斜杠样式 */
+    font-size: 14px;    /* 设置斜杠大小 */
+    padding: -1px;      /* 设置内边框的距离 */
+}
+a:hover{        /* 改变鼠标移入时文字的状态 */
+    color: #c81623;
+}

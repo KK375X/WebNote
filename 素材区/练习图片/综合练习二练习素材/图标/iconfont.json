@@ -1,0 +1,30 @@
+{
+  "id": "2487825",
+  "name": "阿里云图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "301853",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "6367275",
+      "name": "F",
+      "font_class": "F",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "7609653",
+      "name": "地点",
+      "font_class": "xiaochengxu_tubiao",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+/*
+    外边距
+        - 和其他元素的距离
+        - 外边距不会影响盒子的可见框大小，但是外边距会影响盒子的位置
+        - 一共有四个方向的外边距
+            - margin-top：上外边距，设置正值，元素向下移动
+            - margin-right：默认情况下，设置此元素不会产生任何效果
+            - margin-bottom：下外边距，设置正值，其下边的元素会向下移动
+            - margin-left：左外边距，设置正值，元素向右移
+            - margin也可以设置负值，代表元素向相反的方向走
+        - 元素在页面中是按自左向右顺序排列的
+            - 默认设置左和上边距会移动自已
+            - 设置右和下会移动其他元素
+        - margin简写属性
+            - 可以同时设置四个方向的外边距，用法和前面的一样
+            - 语法：margin:100px 表示四个方向的外边距都是100px
+*/
+.box1{
+    /* 内容区和边框 */
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 10px blue solid;
+    /* 外边距 */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* margin-bottom: -100px; */
+    margin-left: 100px;
+}
+.box2{      /* 验证下外边距是否起作用 */
+    /* 内容区 */
+    width: 220px;
+    height: 220px;
+    background-color: green;
+    /* 外边距 */
+    margin-left: 100px;
+
+}

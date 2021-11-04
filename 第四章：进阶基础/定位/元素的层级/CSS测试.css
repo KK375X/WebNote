@@ -1,0 +1,72 @@
+/*
+    - 对于开启了定位的元素，可以通过z-index属性来指定元素的层级，其参数是整数
+        - z-index的值越大层级越高，层级越高越优先显示
+        - 如果层级相同，则优先显示结构上靠下的元素
+        - 祖先元素的层级再高，也永远盖不住后代元素
+*/
+
+div{           /* 设置共同属性 */
+    font-size: 50px;        /* 设置字体大小 */
+    position: absolute;     /* 为三个元素开启定位 */
+}
+
+.box1{
+    background-color: #25a4bb;
+    width: 200px;
+    height: 200px;
+    /* 设置层级 */
+    z-index: 1;
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, .3);
+    /* 设置偏移量 */
+    top: 70px;
+    left: 70px;
+    /* 设置层级 */
+    z-index: 2;
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: #333333;
+    /* 设置偏移量 */
+    top: 140px;
+    left: 140px;
+    /* 设置层级 */
+    z-index: 3;
+}
+
+
+.box4{
+    margin-top: 400px;      /* 设置上边距 */
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+
+    position: absolute;
+    z-index: 3;
+}
+.box5{
+    width: 150px;
+    height: 150px;
+    background-color: sienna;
+
+    position: absolute;
+    /* 相比于父元素，该元素没有设置层级，但显示时，该元素还是在父元素的上层 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

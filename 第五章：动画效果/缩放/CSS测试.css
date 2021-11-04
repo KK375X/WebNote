@@ -1,0 +1,35 @@
+/*
+    缩放：
+        - 对元素进行缩放的函数
+            - scaleX()：将元素块在水平方向上进行缩放
+            - scaleY()：将元素块在垂直方向上进行缩放
+            - scale()：将元素块在水平和垂直两个方向上进行缩放
+        - 函数数值：
+            - 大于1：元素块变大
+            - 小于1：元素块缩小
+            - 等于1：元素块不变
+
+    变形原点：
+        - transform-origin：
+            - 默认值：center
+            - 也可以指定具体数值
+*/
+
+/* 设置元素块的基本样式 */
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #bbffaa;
+    margin: 200px auto;
+    transition: 2s;                 /* 开启动画 */
+    transform-origin: 0 0;          /* 变形的原点 */
+}
+
+/* 鼠标移入，显示变化效果 */
+.box:hover{
+    transform: scaleX(0.2);
+}
+
+
+
+

@@ -1,0 +1,83 @@
+.outer{
+    height: 500px;
+    border-bottom: 10px black solid;
+    margin: 50px auto;
+    overflow: hidden;           /* 开启BFC，防止和子元素块一起运动 */
+}
+
+.outer div{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #bbffaa;
+
+    /* 开启小球下落动画 */
+    animation: ball 0.5s forwards infinite alternate;
+}
+
+/* 创建小球下落动画 */
+@keyframes ball {
+    from{       /* 开始加速下落 */
+        margin-top: 0;
+    }
+    /*25%{        !* 总时间的25%时的动画状态。开始减速上升 *!*/
+    /*    margin-top: 400px;*/
+    /*    animation-timing-function: ease-in;     !* 减速 *!*/
+    /*}*/
+    /*50%{        !* 总时间的50%时的动画状态，开始加速下落 *!*/
+    /*    margin-top: 200px;*/
+    /*}*/
+    /*70%{        !* 总时间的70%时的动画状态，开始减速上升 *!*/
+    /*    margin-top: 400px;*/
+    /*    animation-timing-function: ease-in;     !* 减速 *!*/
+    /*}*/
+    /*90%{        !* 总时间的90%的动画状态，开始加速下落 *!*/
+    /*    margin-top: 350px;*/
+    /*}*/
+    to{         /* 最终停止状态 */
+        margin-top: 400px;
+    }
+}
+
+/* 设置小球颜色 */
+div.box2{
+    background-color: #FF6700;
+    animation-delay: 0.1s;          /* 添加延迟 */
+}
+div.box3{
+    background-color: #6cff8a;
+    animation-delay: 0.2s;          /* 添加延迟 */
+}
+div.box4{
+    background-color: #54b8ff;
+    animation-delay: 0.3s;          /* 添加延迟 */
+}
+div.box5{
+    background-color: #fffed6;
+    animation-delay: 0.4s;          /* 添加延迟 */
+}
+div.box6{
+    background-color: #ffd442;
+    animation-delay: 0.5s;          /* 添加延迟 */
+}
+div.box7{
+    background-color: #ff77a3;
+    animation-delay: 0.6s;          /* 添加延迟 */
+}
+div.box8{
+    background-color: #c62dff;
+    animation-delay: 0.7s;          /* 添加延迟 */
+}
+div.box9{
+    background-color: #71ff57;
+    animation-delay: 0.8s;          /* 添加延迟 */
+}
+div.box10{
+    background-color: #ff0a18;
+    animation-delay: 0.9s;          /* 添加延迟 */
+}
+
+
+
+

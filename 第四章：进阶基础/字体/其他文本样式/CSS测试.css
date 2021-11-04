@@ -1,0 +1,25 @@
+/*
+    - text-decoration：文本修饰
+        - none：默认值，什么都没有
+        - underline：下划线
+        - overline：上划线
+        - line-through：删除线
+
+    - white-space：设置网页如何处理空白
+        - normal：默认值，正常
+        - nowrap：不论多少文字，都不换行，和overflow配合使用
+        - pre：保留文本所写的空白，和源码显示的一样
+
+*/
+.box1{
+    font-size: 50px;
+    text-decoration: underline red;     /* 第一个设置样式，第二个设置颜色 */
+}
+
+.box2{
+    /* 以下四行要配合使用 */
+    width: 300px;               /* 设置文字展示宽度 */
+    white-space: nowrap;        /* 只显示一行文字，不换行 */
+    overflow: hidden;           /* 裁剪掉多余的文字，和遮盖差不多 */
+    text-overflow: ellipsis;    /* 将溢出的内容以省略号展示 */
+}

@@ -1,0 +1,33 @@
+/*
+    - background-color：设置背景颜色
+
+    - background-image：设置背景图片路径
+        - 可以同时设置背景图片和背景颜色，这时背景颜色就是背景图片的背景颜色
+        - 如果背景图片小于元素，则背景图片会在元素中平铺，直到把元素铺满
+        - 如果背景图片大于元素，则将有一部分图片无法正常显示
+        - 如果背景图片和元素一样大，则正常显示
+
+    - background-repeat：设置背景图片的重复方式
+        - repeat：默认值，背景会沿x轴，y轴两个方向重复
+        - repeat-x：背景会沿x轴方向重复
+        - repeat-y：背景会沿y轴方向重复
+        - no-repeat：背景图片不重复（有多大，显示多大）
+
+    - background-position：设置背景图片的位置
+        - 通过top、left、right、bottom、center设置位置（至少需要两个方位值连用）
+            - 一般两个值连用，表示方位
+            - 只用一个值，第二个值默认是center
+        - 通过偏移量指定图片位置（以像素（px）为单位）
+            - 第一个值：水平方向的偏移量
+            - 第二个值：垂直方向的偏移量
+*/
+.box{
+    /* 设置图片展示区域大小 */
+    width: 600px;
+    height: 600px;
+
+    background-color: red;                      /* 设置图片背景颜色 */
+    background-image: url("图片/素材.gif");      /* 设置图片路径 */
+    background-repeat: no-repeat;               /* 设置图片重复方式 */
+    background-position: center center;         /* 设置图片位置 */
+}

@@ -1,0 +1,21 @@
+/*
+    - 内容区：网页中的所有文字和子元素都在内容区中排列
+        - 内容区的大小由width（宽度）和height（高度）来决定
+    - 边框：边框属于盒子的边缘，出了边框都是盒子外面，边框里面都是盒子内部
+        - 边框的大小会影响到盒子的大小
+        - 设置边框要设置三个样式：
+            - 边框宽度：border-width
+            - 边框的颜色：border-color
+            - 边框的样式：border-style
+*/
+.box1{
+    /* 内容区 */
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+
+    /* 边框 */
+    border-width: 10px;
+    border-color: blue;
+    border-style: solid;
+}

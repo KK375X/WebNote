@@ -1,0 +1,44 @@
+/*
+    css原生也支持变量的设置
+        - 统一样式：利用宏定义，用变量代替具体的数值
+            - 语法：--宏定义名称：需要设置的样式数值
+
+        - 自动计算函数：calc(填写具体的表达式)
+ */
+html{
+    --color: #ffff00;
+}
+
+
+/* 设置测试样式 */
+.box1{
+    width: calc(200px/2);
+    height: 100px;
+    background-color: var(--color);
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    color: var(--color);
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--color);
+}
+
+
+.box1{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+

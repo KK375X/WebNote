@@ -1,0 +1,30 @@
+/* 设置外层容器样式 */
+.nav{
+    width: 100%;
+    height: 200px;
+}
+
+/* 设置每行的样式 */
+.nav-inner{
+    display: flex;                      /* 设置为弹性容器 */
+    justify-content: space-around;      /* 设置主轴上的空白分布 */
+}
+
+/* 设置每个元素块的样式 */
+.item{
+    width: 10%;                         /* 设置图片占整个元素的比例 */
+    /*background-color: yellow;*/
+    /*flex: auto;*/
+    text-align: center;                 /* 设置文字为居中样式 */
+}
+
+.item img{
+    width: 100%;                        /* 设置照片的宽度和父元素的宽度一样 */
+}
+
+/* 设置字体样式 */
+.item span{
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+}

@@ -1,0 +1,38 @@
+/* 设置外部容器样式 */
+.nav{
+    width: 1210px;
+    height: 46px;
+    background-color: #adb1b1;
+    margin: 200px auto;
+
+    display: flex;          /* 设置弹性容器 */
+}
+
+/* 设置每个li元素块的自动增长系数 */
+.nav li{
+    flex-grow: 1;
+}
+
+/* 设置内部文字样式 */
+.nav a{
+    display: block;
+    line-height: 46px;
+    text-align: center;
+    font-size: 16px;
+    color: #FF6700;
+}
+
+.nav a:hover{
+    background-color: #424242;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+

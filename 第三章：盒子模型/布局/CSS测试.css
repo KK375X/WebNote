@@ -1,0 +1,65 @@
+/* 设置三部分的共同样式 */
+header, main, footer{
+    width: 1000px;
+    margin: 0 auto;         /* 使位置居中排列 */
+}
+
+/* 设置头部样式 */
+header{
+    height: 100px;
+    background-color: yellow;
+}
+
+/* 设置主体样式 */
+main{
+    height: 300px;
+    background-color: #ffffc4;
+    margin: 10px auto;      /* 设置三个部分间的空隙 */
+}
+
+/* 设置底部样式 */
+footer{
+    height: 100px;
+    background-color: green;
+}
+
+/* 设置左侧导航栏样式 */
+.left{
+    float: left;        /* 设置浮动样式 */
+    width: 180px;       /* 使其左右留有间隙 */
+    height: 94%;        /* 和其父元素保持相同 */
+    margin: 9px 10px;   /* 设置垂直居中 */
+    background-color: #cacaca;
+}
+
+/* 设置中间文字样式 */
+.word{
+    float: left;        /* 设置浮动样式 */
+    width: 580px;       /* 使其左右留有间隙 */
+    height: 94%;        /* 和其父元素保持相同 */
+    margin: 9px 10px;   /* 设置垂直居中 */
+    background-color: #25a4bb;
+}
+
+/* 设置右侧导航栏样式 */
+.right{
+    float: left;        /* 设置浮动样式 */
+    width: 180px;       /* 使其左右留有间隙 */
+    height: 94%;        /* 和其父元素保持相同 */
+    margin: 9px 10px;   /* 设置垂直居中 */
+    background-color: #898888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

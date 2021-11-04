@@ -1,0 +1,84 @@
+/*
+    过渡（transition）
+        - 通过过渡可以指定一个属性发生变化的切换方式
+        - 多个属性使用逗号隔开，如果所有属性都需要过渡，直接指定all
+
+    - transition-property: 指定哪些属性需要进行过渡效果
+
+    - transition-duration: 指定过渡效果持续的时间（1s = 1000ms），也可以分别对属性指定时间，但是要对应
+
+    - transition-timing-function: 过渡的时序函数，指定过渡的执行方式
+        - ease：默认值，先加速，再减速
+        - linear：匀速运动
+        - ease-in：加速运动
+        - ease-out：减速运动
+        - ease-in-out：先加速，再减速
+        - cubic-bezier()：贝塞尔曲线，指定时序函数
+            - 网址：https://cubic-bezier.com/#.17,.67,.83,.67，复制导航栏的数据
+        - steps()：分布过渡效果
+            - start：时间均分后，鼠标移入的开始就动
+            - end：时间均分后，鼠标移入后过时间均分后才开始动
+
+    - transition-delay: 过渡动画效果的延迟，等待一段时间后开始执行
+
+    - transition: 简写属性，一次性写多个需求值，如果要写延迟，则两个的第一个是持续时间，第二个是延迟时间
+*/
+
+/* 设置子元素样式 */
+.box2{
+    background-color: #bbffaa;
+
+    /*transition: height 2s;              !* 用两秒钟进行高度的变化 *!*/
+    /*transition: all 2s;                     !* 用两秒钟进行全部属性的变化（高度和宽度） *!*/
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 2s;
+
+}
+.box3{
+    background-color: #FF6700;
+
+    /*transition-timing-function: ease;         默认值，先加速，再减速 */
+    /*transition-timing-function: linear;       匀速运动 */
+    /*transition-timing-function: ease-in;      加速运动 */
+    /*transition-timing-function: ease-out;     减速运动 */
+    /*transition-timing-function: ease-in-out;  先加速，再减速 */
+    /*transition-timing-function: cubic-bezier(0,1.95,1,-0.93);*/
+    /*transition-timing-function: steps(4);      分四步执行过渡动画 */
+    /*transition-timing-function: steps(2, start);      每步在一秒之前立马动 */
+    /*transition-timing-function: steps(2, end);        每步在一秒之后才动 */
+    transition-property: all;
+    transition-duration: 2s;
+
+}
+
+/* 设置鼠标进入box1时，box2发生变化 */
+.box1:hover div{
+    width: 200px;                       /* 设置元素变大宽度 */
+    height: 200px;                      /* 设置元素变大高度 */
+    background-color: #f10215;          /* 设置元素变换颜色 */
+    margin-left: 700px;                 /* 设置最终元素出现位置 */
+}
+
+/* 设置清除样式 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* 设置box1样式 */
+.box1{
+    width: 800px;
+    height: 600px;
+    background-color: silver;
+    overflow: hidden;
+}
+
+.box1 div{
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;              /* 设置初始位置 */
+    margin-left: 0;                 /* 设置初始位置 */
+}
+
+

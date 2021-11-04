@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+
+    <!--
+        通过table标签来创建一个表格
+            - 在table中使用tr表示表格中的一行，有几个tr就有几行
+            - 在tr中使用td表示一个单元格，有几个td就有几个单元格
+    -->
+    <table border="1" width="50%" align="center">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <!-- rowspan：纵向的合并单元格 -->
+            <td rowspan="2">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+<!--            <td>C3</td>-->
+        </tr>
+        <tr>
+            <td>A4</td>
+            <!-- colspan：横向的合并单元格 -->
+            <td colspan="2">B4</td>
+<!--            <td>C4</td>-->
+        </tr>
+    </table>
+
+
+</body>
+</html>

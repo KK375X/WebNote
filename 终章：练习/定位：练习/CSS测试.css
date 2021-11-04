@@ -1,0 +1,38 @@
+img{                /* 设置图片大小 */
+    width: 590px;
+}
+
+.item{              /* 设置图片样式 */
+    width: 590px;
+    height: 470px;
+    margin: 100px auto;     /* 居中排列 */
+    position: relative;     /* 开启相对行为，成为子元素的包含块 */
+}
+
+.item li{           /* 开启定位 */
+    position: absolute;
+}
+
+.pointer{           /* 设置导航点位置和层级 */
+    z-index: 9999;          /* 设置层级 */
+    position: absolute;     /* 开启绝对定位 */
+    bottom: 20px;           /* 设置距底边距 */
+    left: 10px;             /* 设置右边距 */
+}
+
+.pointer a{         /* 设置导航点样式 */
+    float: left;        /* 设置为浮动样式，使其脱离文档流 */
+    width: 10px;
+    height: 10px;
+    background-color: rgba(42, 104, 255, 0.8);
+    margin: 0 4px;      /* 添加导航条间隔 */
+    border-radius: 50%; /* 设置为圆形 */
+    border: 2px solid transparent;      /* transparent设置背景为透明 */
+    /* 将背景颜色设置到内容区，边框和内边距不在有背景颜色 */
+    background-clip: content-box;
+}
+
+.pointer a:hover{       /* 设置导航点鼠标移入样式 */
+    background-color: #6f80ca;          /* 设置导航点颜色 */
+    border: 2px rgba(100, 204, 255, 0.3) solid;      /* 设置边框 */
+}

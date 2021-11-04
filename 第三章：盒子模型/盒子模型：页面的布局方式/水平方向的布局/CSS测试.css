@@ -1,0 +1,57 @@
+/*
+    水平方向的布局：
+        - 元素在其水平方向上的位置由以下几个属性共同决定
+            - margin-left
+            - border-left
+            - padding-left
+            - width
+            - padding-right
+            - border-right
+            - margin-right
+
+        - 一个元素在其父元素中，必须满足以下等式
+            (margin-left)+(border-left)+(padding-left)+(width)+(padding-right)+(border-right)+(margin-right)
+            = 其父元素内容区的宽度（必须满足，在实例中等于800px）
+            - 以上等式必须满足，如果相加结果使等式不成立，称为过度约束，则等式会自动调整
+                - 如果这七个值中没有auto的情况，则浏览器会自动调整margin-right的值使等式成立
+                - 这七个值中有三个可以设置为auto，分别是：width，margin-left，margin-right
+                    - 如果某个值被设置为auto，浏览器则会自动调整那个auto的值使等式成立
+                - 如果将一个宽度和一个外边距设置为auto，则宽度会调整到最大，设置为auto的外边距会自动为0
+                - 如果将三个值都设置为auto，则外边距都是0，宽度最大
+                - 如果将两个外边距设置为auto，宽度为固定值，则会将外边距设置为相同的值
+                    - 利用这个特点设置元素在父元素的位置为水平居中
+                        - width:某个像素大小;
+                        - margin:0 auto;
+*/
+/* 未设置为auto的情况展示 */
+.outer{
+    width: 800px;
+    height: 200px;
+    border: 10px red solid;
+}
+.inner{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+/* 设置为auto的情况展示 */
+.x{
+    width: 800px;
+    height: 200px;
+    border: 10px blue solid;
+}
+.y{
+    width: auto;
+    height: 200px;
+    background-color: indigo;
+}
+
+
+
+
+
+
+
+
+

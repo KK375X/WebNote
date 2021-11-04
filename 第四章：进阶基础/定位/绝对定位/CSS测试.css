@@ -1,0 +1,68 @@
+/*
+    - 绝对定位
+        - 当元素的position的属性值设置为absolute时，则开启了该元素的绝对定位
+        - 绝对定位的特点：
+            - 开启绝对定位后，如果不设置偏移量，该元素不会发生变化
+            - 开启绝对定位后，元素从文档流中脱离
+            - 绝对定位会改变元素的性质，行内变成块，块的宽高被内容撑开
+            - 绝对定位会会使元素提升一个层级
+            - 绝对定位元素使相对于其包含块进行定位的
+
+    - 包含块（containing block）
+        - 正常情况下：包含块的就是离当前元素最近的祖先块元素
+        - 开启绝对定位的包含块：
+            - 包含块就是离它最近的开启了定位的祖先元素
+            - 如果所有的祖先元素都没有开启定位，则根元素就是它的包含块
+            - html：根元素、初始包含块
+
+    - 偏移量和相对定位的一样，也是top、bottom、left和right
+*/
+
+div{        /* 设置字体的大小 */
+    font-size: 50px;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #c81623;
+}
+
+.box2{      /* 为该元素设置绝对定位 */
+    width: 200px;
+    height: 200px;
+    background-color: #0F7812;
+
+    /* 为该元素设置绝对定位 */
+    position: absolute;
+}
+
+.box3{
+    width: 300px;
+    height: 300px;
+    background-color: #3d32bb;
+}
+
+/* 设置测试用的box4和box5元素的样式 */
+.box4{
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    /* position: relative;     为其开启相对定位 */
+}
+.box5{
+    width: 400px;
+    height: 400px;
+    background-color: indigo;
+    /* position: relative;     为其开启相对定位 */
+}
+
+
+
+
+
+
+
+
+
+

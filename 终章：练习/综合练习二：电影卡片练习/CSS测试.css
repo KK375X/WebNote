@@ -1,0 +1,93 @@
+/* 设置外部容器样式 */
+.item{
+    width: 250px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(177, 177, 177, .5);
+}
+/* 解决高度塌陷，高度根据内容调整 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* 设置图片 */
+.one{
+    width: 250px;
+    height: 140px;
+    background-image: url("./综合练习二图片/1.jpg");
+    border-bottom: 1px rgba(177, 177, 177, .5) solid;
+    vertical-align: bottom;     /* 解决图片与边框之间的白边问题 */
+}
+
+/* 设置中间文字框 */
+.two h2{
+    color: #A9AAA9;
+    margin: 12px;
+}
+.two i{
+    font-size: 15px;
+    color: #BABBB9;
+}
+.two i::before{
+    content: '\e607';
+    font-family: 'iconfont';
+    color: #BABBB9;
+    font-size: 18px;
+    margin: 0 5px 0 10px;
+}
+.two p{
+    font-size: 15px;
+    color: #BABBB9;
+    margin: 24px 15px;
+}
+
+/* 设置底部图案 */
+.three{
+    float: none;
+    border-top: 2px rgba(177, 177, 177, .2) solid;
+}
+.x{
+    float: left;
+    margin: 8px 0 9px 12px;
+}
+.y{
+    float: left;
+        margin: 8px 0;
+}
+.x::before,
+.x::after{
+    content: '\e632';
+    font-family: 'iconfont';
+    color: #B8C13C;
+    font-size: 20px;
+}
+.y::before,
+.y::after{
+    content: '\e632';
+    font-family: 'iconfont';
+    color: #DBDCDB;
+    font-size: 20px;
+}
+.z{
+    float: right;
+    margin: 9px 30px;
+}
+.z::before{
+    content: '\e61f';
+    font-family: 'iconfont';
+    color: #DBDCDB;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+.img-list{      /* 设置外部ul样式 */
+    width: 190px;       /* 设置宽度 */
+    height: 470px;      /* 设置高度 */
+    background-color: red;
+    overflow: hidden;   /* 裁剪溢出内容 */
+}
+.img-list li{       /* 设置图片的外边距 */
+    margin-bottom: 10px;
+}
+.img-list img{      /* 设置图片大小 */
+    width: 100%;
+}

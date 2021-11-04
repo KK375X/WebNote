@@ -1,0 +1,72 @@
+/* 设置视距 */
+.html{
+    perspective: 800px;
+}
+
+/* 设置外部容器基础样式 */
+.cube{
+    width: 300px;
+    height: 300px;
+    /*background-color: #bbffaa;*/
+    margin: 200px auto;
+
+    /* 设置3D变形效果 */
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateZ(45deg);
+
+    /* 开启动画效果 */
+    animation: test linear 20s infinite;
+}
+
+/* 添加动画效果 */
+@keyframes test {
+    from{
+        transform: rotateX(0) rotateZ(0);           /* 设置开始旋转角度 */
+    }
+    to{
+        transform: rotateX(1turn) rotateZ(1turn);   /* 设置旋转圈数 */
+    }
+}
+
+/* 设置存放图片的div样式 */
+.cube > div{
+    width: 300px;                       /* 设置存放图片div容器的大小 */
+    height: 300px;
+    position: absolute;                 /* 开启绝对定位，脱离文档流 */
+    opacity: 0.6;                       /* 为元素设置透明效果 */
+}
+
+/* 设置图片样式 */
+img{
+
+    width: 300px;                       /* 设置图片大小 */
+    vertical-align: top;                /* 取消图片之间的边距 */
+}
+
+/* 设置每张图片的样式 */
+.box1{
+    transform: rotateY(90deg) translateZ(150px);
+}
+.box2{
+    transform: rotateY(-90deg) translateZ(150px);
+}
+.box3{
+    transform: rotateX(90deg) translateZ(150px);
+}
+.box4{
+    transform: rotateX(-90deg) translateZ(150px);
+}
+.box5{
+    transform: rotateY(0) translateZ(150px);
+}
+.box6{
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+
+
+
+
+
+
+

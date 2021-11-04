@@ -1,0 +1,22 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #0F7812;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: #c81623;
+    margin-top: 100px;
+}
+
+/*
+    这个样式可以同时解决 高度塌陷和重叠的问题，
+*/
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}

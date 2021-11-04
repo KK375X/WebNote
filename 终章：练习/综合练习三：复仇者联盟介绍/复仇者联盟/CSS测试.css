@@ -1,0 +1,93 @@
+/*!* 解决高度塌陷和重贴问题 *!*/
+/*.outer::before,*/
+/*.outer::after{*/
+/*    content: '';*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/
+.item{
+    width: 500px;
+    height: 50px;
+    font-size: 50px;
+    color: red;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border: 15px solid;
+    border-color: red yellow;
+}
+
+/* 设置外部区域位置 */
+.outer{
+    width: 820px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .8);    /* 设置阴影边框 */
+    margin: 40px auto;
+}
+
+/* 设置内部区域位置 */
+.inner{
+    padding: 20px 20px 80px 20px;       /* 设置内边距 */
+    overflow: hidden;
+    position: relative;                 /* 父元素开启相对定位 */
+}
+
+/* 设置文字出现的共同样式 */
+.inner .box{
+    width: 400px;
+    font: 20px "Microsoft YaHei";
+    text-align: center;     /* 文字居中 */
+    line-height: 40px;      /* 高度居中 */
+    display: none;          /* 设置初始为隐藏状态 */
+    border-radius: 15px;    /* 设置文字框圆角样式 */
+    position: absolute;     /* 设置绝对定位，使其不占据页面位置 */
+    bottom: 20px;           /* 设置偏移量 */
+    left: 210px;
+    right: 210px;
+    /*margin: auto;*/
+}
+
+/* 设置图片样式 */
+img{
+    width: 120px;
+    float: left;
+    margin: 5px;
+    transition: all 0.6s;   /* 设置图片放大的时间 */
+}
+
+/* 设置鼠标移入，图片放大的过渡动画 */
+img:hover{
+    transform: scale(1.1); /* 鼠标移入，图片放大效果 */
+}
+
+/* 设置鼠标移入，显示文字效果 */
+.img:hover .box{
+    display: block;
+}
+
+/* 设置具体的文字出现样式 */
+.box1{
+    background-color: orange;
+}
+
+.box2{
+    background-color: #008000;
+}
+
+.box3{
+    background-color: red;
+}
+
+.box4{
+    background-color: #497cff;
+}
+
+.box5{
+    background-color: yellow;
+}
+
+.box6{
+    background-color: #adb1b1;
+}
+
+
+

@@ -1,0 +1,19 @@
+/*
+    - em
+        - em是相对于元素（自身的）的字体大小来计算的
+        - 1em = 1font-size
+        - em会根据字体大小的改变而改变
+    - rem
+        - rem是相对于根元素（html的）的字体大小来计算的
+*/
+.box1{
+    width: 20em;
+    height: 10em;
+    background-color: blue;
+}
+
+.box2{
+    width: 20rem;
+    height: 10rem;
+    background-color: red;
+}

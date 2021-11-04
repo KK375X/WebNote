@@ -1,0 +1,29 @@
+/*
+    :link  用料表示没访问过的链接（正常连接）
+*/
+a:link{
+    color: red;
+}
+
+/*
+    :visited  用来表示访问过的连接
+    由于隐私的原因，visited只能修改链接的颜色
+*/
+a:visited{
+    color: blue;
+}
+
+/*
+    :hover  用来表示鼠标移入的状态
+*/
+a:hover{
+    color: aqua;
+    font-size: 30px;
+}
+
+/*
+    :active  用来表示鼠标点击时的的状态
+*/
+a:active{
+    color: indigo;
+}

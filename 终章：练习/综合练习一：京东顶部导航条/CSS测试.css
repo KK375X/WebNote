@@ -1,0 +1,134 @@
+/* 设置最外部容器样式 */
+.outer{
+    width: auto;                    /* 宽度沾满 */
+    line-height: 40px;              /* 高度设置为30px */
+    background-color: #E3E4E5;          /* 背景颜色 */
+}
+
+/* 设置内部容器样式 */
+.inner{
+    width: 1190px;          /* 设置宽度 */
+    margin: 0 auto;         /* 内部容器样式居中对齐 */
+}
+
+/* 解决高度塌陷问题 */
+.inner::before,
+.inner::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 设置全部文字的共同样式 */
+.inner p{
+    float: left;            /* 设置浮动 */
+    font-size: 12px;        /* 设置字体大小 */
+    line-height: 30px;      /* 使文字居中对齐 */
+    color: #9C9C9C;         /* 文字颜色 */
+}
+
+/* 设置竖线分隔符样式 */
+.inner span{
+    float: left;            /* 设置浮动 */
+    font-size: 2px;         /* 设置竖线大小 */
+    color: #CCCCCC;         /* 设置竖线颜色 */
+    line-height: 30px;      /* 使竖线居中对齐 */
+    margin: auto 4px;       /* 设置竖线的左右边距 */
+}
+
+/* 设置one的样式 */
+.one{
+    float: left;            /* 左浮动 */
+}
+.one p::before{
+    content: '\e61a';       /* 图标编号 */
+    font: 14px 'iconfont', 'sans-serif';    /* 设置样式 */
+    color: #f10215;         /* 图标颜色 */
+    margin-left: 3px;      /* 设置图标右边距 */
+}
+
+/* 设置two的样式 */
+.two{                       /* 定位two容器的位置 */
+    float: right;           /* 右浮动 */
+    text-align: center;     /* 使文字居中排列 */
+}
+.two .x{
+    width: 72px;            /* 设置文字宽度 */
+    margin-right: 8px;      /* 设置右边距 */
+}
+.two .y{
+    width: 48px;            /* 设置文字宽度 */
+    margin-right: 14px;      /* 设置右边距 */
+}
+.two p:hover{
+    color: #EE3443;
+}
+
+/* 设置导航栏文字宽度和居中样式 */
+.two .box1,
+.two .box3,
+.two .box7{
+    width: 62px;            /* 设置文字宽度 */
+}
+.two .box2,
+.two .box4,
+.two .box5,
+.two .box6{
+    width: 77px;            /* 设置文字宽度 */
+}
+
+/* 设置文字常红状态 */
+.two .box4,
+.two .y{
+    color: #F01829;
+}
+
+/* 设置箭头图标 */
+.two .box2::after,
+.two .box4::after,
+.two .box5::after,
+.two .box6::after{
+    content: '\e612';           /* 设置图标编码 */
+    font: 12px 'iconfont', 'sans-serif';    /* 设置样式 */
+    color: #A3A3A3;             /* 设置图标颜色 */
+    margin-left: 2px;           /* 设置图标左边距 */
+}
+
+/* 设置鼠标移入文字变红样式 */
+.one p:hover,
+.two .box1:hover,
+.two .box2:hover,
+.two .box3:hover{
+    color: #F01829;
+}
+
+/* 设置鼠标移入背景颜色变白样式 */
+.one p:hover,
+.two .box2:hover,
+.two .box4:hover,
+.two .box5:hover,
+.two .box6:hover{
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

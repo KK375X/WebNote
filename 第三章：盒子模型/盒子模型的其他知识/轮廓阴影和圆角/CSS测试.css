@@ -1,0 +1,53 @@
+/*
+    - outline：用来设置轮廓线，用法的border一样
+    - outline（轮廓）和border（边框）的不同点：轮廓不会影响可见框的大小
+        - 一般用在鼠标移入时做过渡动画效果
+
+    - box-shadow：用来设置元素的阴影效果，阴影不会影响页面的布局
+        - 第一个值：水平偏移量，正值向右，负值向左
+        - 第二个值：垂直偏移量，正值向下，负值向上
+        - 第三个值：阴影的模糊半径
+        - 第四个值：阴影颜色
+
+    - border-radius：用来设置圆角，圆角设置圆的半径大小
+        - 四个值：左上 右上 右下 左下
+        - 三个值：左上 右上/左下（对角） 右下
+        - 两个值：左上/右下（对角） 右上/左下（对角）
+        - 也可以设置成百分比
+        - 在指定某个方向时，可以设置成两个值，表示两个半径展现出来的圆角
+*/
+
+/* 轮廓展示 */
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: #c81623;
+}
+.box1:hover{
+    outline: 10px black solid;
+}
+
+/* 阴影展示 */
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: #c81623;
+
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+/* 圆角展示 */
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: #c81623;
+
+    border-radius: 10px 15px 20px 25px;    /* 设置全部位置圆角 */
+    /* border-top-left-radius: 10px;        设置上左圆角 */
+    /* border-top-right-radius: 10px;       设置上右圆角 */
+    /* border-bottom-left-radius: 10px;     设置下左圆角 */
+    /* border-bottom-right-radius: 10px;    设置下右圆角 */
+}
+
+
+

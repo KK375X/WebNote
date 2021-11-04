@@ -1,0 +1,34 @@
+/*
+    - 默认样式：通常情况下，浏览器会为元素设置一些默认样式，默认样式会影响到页面布局，必须重新设置样式
+
+    - 重置样式表：专门用来对浏览器的样式进行重置
+        - reset.css 直接去除浏览器的全部默认样式
+        - normalize.css 对默认样式进行统一，使页面在不同浏览器中展示的内容相同
+*/
+/* 去除div的边距 */
+.box{
+    width: 200px;
+    height: 200px;
+    border: 5px blue solid;
+}
+body{
+    margin: 0;
+}
+
+/* 去除p的边距 */
+p{
+    margin: 0;
+}
+
+/* 去除ul里面li的边距 */
+ul{
+    margin: 0;
+    list-style: none;       /* 去除项目符号 */
+    padding: 0;
+}
+
+/* 最简单的去除样式的方法 */
+*{
+    margin: 0;
+    padding: 0;
+}

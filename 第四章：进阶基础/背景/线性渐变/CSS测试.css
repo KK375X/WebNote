@@ -1,0 +1,46 @@
+/*
+    - 通过渐变可以设置一些复杂的背景颜色，可以实现从一个颜色向其他颜色过度的效果。渐变的是图片，需要通过background-image来设置。
+
+    - linear-gradient()：线性渐变，颜色沿着一条直线发生改变
+        - 第一个值是开头，第二个值、、、第n个值是结尾
+        - 指定渐变方向，写在括号里最前面
+            - to left：向左渐变
+            - to right：向右渐变
+            - to bottom：向下渐变
+            - to top：向上渐变
+            - xxxdeg：deg表示旋转度数
+            - 也可以写两个方位值，比如to top left表示向左上渐变
+            - turn：表示圈（.25turn）
+        - 渐变可以同时指定多个颜色，多个颜色默认情况下平均分配
+        - 可以手动指定分配情况
+
+    - repeating-linear-gradient()：重复线性渐变，用法和上述用法一样
+
+*/
+
+div{        /* 全部设置成浮动，方便观察 */
+    float: left;
+    margin-right: 5px;
+}
+
+.box1{
+    display: block;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to bottom, red, blue, yellow);
+}
+
+/* 手动分配颜色分布 */
+.box2{
+    width: 400px;
+    height: 400px;
+    /* 从父元素的第50个像素开始渐变，50像素之内，都是纯色 */
+    background-image: linear-gradient(red 50px, blue);
+}
+
+/* 重复的线性渐变 */
+.box3{
+    width: 400px;
+    height: 400px;
+    background-image: repeating-linear-gradient(red 50px, blue 100px);
+}

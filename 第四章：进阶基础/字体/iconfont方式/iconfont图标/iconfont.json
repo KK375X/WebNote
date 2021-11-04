@@ -1,0 +1,72 @@
+{
+  "id": "2487825",
+  "name": "阿里云图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2674473",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "2674474",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "2674478",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "2674480",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "2674483",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "2675010",
+      "name": "分类",
+      "font_class": "fenlei",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "2675143",
+      "name": "浏览",
+      "font_class": "liulan",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "2675552",
+      "name": "选中",
+      "font_class": "xuanzhong",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "2716513",
+      "name": "已勾选32",
+      "font_class": "yigouxuan",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}

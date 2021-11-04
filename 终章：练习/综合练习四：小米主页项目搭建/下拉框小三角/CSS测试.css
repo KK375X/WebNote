@@ -1,0 +1,8 @@
+/* 生成三角形边框 */
+.box{
+    width: 0;
+    height: 0;
+    border: 50px solid;
+    border-top: none;       /* 去除上边部分 */
+    border-color: transparent transparent blue transparent;     /* 其他边设置成透明色 */
+}

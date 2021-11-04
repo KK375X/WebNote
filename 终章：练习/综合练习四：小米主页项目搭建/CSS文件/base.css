@@ -1,0 +1,32 @@
+/* 公共样式文件 */
+
+/* 解决高度塌陷和重叠问题 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 去除所有超链接的下划线 */
+a{
+    text-decoration: none;
+    color: #333333;
+}
+
+/* 设置公共字体样式 */
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333333;
+    min-width: 1226px;          /* 设置最小屏幕宽度 */
+}
+
+/* 设置一个类，用来表示屏幕的宽度 */
+.w{
+    width: 1226px;              /* 固定容器宽度 */
+    margin: 0 auto;             /* 设置容器居中 */
+}
+
+
+
+

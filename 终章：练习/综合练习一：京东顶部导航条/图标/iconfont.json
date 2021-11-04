@@ -1,0 +1,23 @@
+{
+  "id": "2487825",
+  "name": "阿里云图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2402040",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1288664",
+      "name": "地点",
+      "font_class": "didian",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    }
+  ]
+}

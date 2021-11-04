@@ -1,0 +1,25 @@
+/*
+    - 在点击图片时，若是存在多个图片，由于缓存问题，会出现闪烁问题，这时需要将多个图片拼凑成一个图片，一次性缓存。通过background-position移动图片位置，此技术叫做CSS-Sprite（雪碧图）。
+
+    - 雪碧图的使用方法
+        - 先确定要使用的图片
+        - 测量图片的大小
+        - 根据测量结果创建一个元素
+        - 将雪碧图设置为元素的背景图片
+        - 设置偏移量（background-position），以便显示正确的图片
+*/
+
+a:link{         /* 未点击图标时 */
+    display: block;     /* 设置成块元素，用于显示图片 */
+    width: 208px;
+    height: 72px;
+    background-image: url("./练习图片/综合图片.gif");
+}
+
+a:hover{        /* 点击图标时 */
+    background-position: -208px 0;       /* 通过移动图片位置，解决加载缓存出现闪烁的情况 */
+}
+
+a:active{        /* 点击图标完成时 */
+    background-position: -416px 0;       /* 通过移动图片位置，解决加载缓存出现闪烁的情况 */
+}

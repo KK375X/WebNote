@@ -1,0 +1,521 @@
+/* 顶部导航条容器 */
+.top-bar-wrapper{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333333;
+}
+
+/* 设置超链接的颜色 */
+.top-bar a{
+    font-size: 12px;
+    color: #b0b0b0;
+    display: block;
+}
+
+/* 设置鼠标移入效果 */
+.top-bar a:hover{
+    color: #FFFFFF;
+}
+
+/* 设置分割线样式 */
+.top-bar .line{
+    color: #424242;
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+/* 设置左侧导航栏 */
+.service, .top-bar li{
+    float: left;
+}
+
+/* 为app开启相对定位 */
+.app{
+    position: relative;
+}
+
+/* 设置鼠标移入，出现二维码框 */
+.app:hover .qrcode{
+    z-index: 9999;
+    background-color: white;
+    display: block;
+    height: 148px;
+}
+.app:hover::after{
+    z-index: 9999;
+    display: block;
+    height: 148px;
+}
+
+/* 设置app下的小三角 */
+.app::after{
+    display: none;              /* 初始状态设置为隐藏 */
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;         /* 设置绝对定位 */
+    bottom: 0;                  /* 设置偏移量 */
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 10px solid transparent;         /* 设置四个方向的边框 */
+    border-top: none;           /* 去除上边框 */
+    border-bottom-color: white;
+}
+
+/* 设置下载app的下拉框样式 */
+.app .qrcode{
+    z-index: 9999;
+    /*display: none;              !* 初始状态设置为隐藏 *!*/
+    width: 124px;
+    /*height: 148px;*/
+
+    /* 除display外第二种隐藏方式 */
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    left: -40px;
+    line-height: 1;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+    /* transition：用于为样式设置过渡动画效果 */
+    transition: height 0.3s;        /* 该标签的高度出现动画为0.3s */
+}
+
+/* 设置app二维码图片样式 */
+.app .qrcode img{
+    width: 90px;
+    margin: 18px 17px 12px;
+}
+
+/* 设置app二维码下方文字样式 */
+.app .qrcode span{
+    color: black;
+    font-size: 14px;
+}
+
+/* 设置右侧导航栏 */
+.shout-cart, .user-info{
+    float: right;
+}
+
+/* 设置购物车样式 */
+.shout-cart a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+    margin-left: 26px;
+    position: relative;
+}
+
+/* 设置鼠标移入，购物车出现下拉框 */
+.shout-cart:hover a,
+.shout-cart:hover .shopping-cart-list{
+    color: #FF6700;             /* 文字颜色 */
+    background-color: white;    /* 背景颜色 */
+    display: block;
+    height: 100px;              /* 设置下拉框高度 */
+}
+
+/* 设置购物车下拉框内文字的样式 */
+.shopping-cart-list p{
+    font-size: 14px;
+    color: black;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* 设置购物车下拉框样式 */
+.shopping-cart-list{
+    z-index: 9999;
+    /*display: none;              !* 设置初始状态为隐藏 *!*/
+    float: none;
+    width: 316px;
+    height: 0;                  /* 设置初始状态为隐藏 */
+    overflow: hidden;
+    background-color: white;
+    position: absolute;         /* 开启绝对定位 */
+    top: 40px;
+    right: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transition: height 0.3s;    /* 添加过渡动画 */
+}
+
+
+
+/* 头部容器 */
+.header{
+    height: 100px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    margin: 0 auto;             /* 设置居中排列 */
+}
+
+/* 设置参考定位 */
+.header-wrapper{
+    position: relative;
+}
+
+/* 设置logo位置 */
+.header .logo{
+    float: left;
+    /*line-height: 100px;*/
+    margin-top: 22px;
+    /* 固定容器的宽度和高度 */
+    width: 56px;
+    height: 56px;
+    /*position: relative;*/
+}
+
+/* 设置logo样式 */
+.header .logo a{
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url("../image/小米logo.png");
+    transition: background-position 0.3s;       /* 设置过渡动画 */
+}
+
+/* 设置鼠标移入展示雪碧图过渡动画效果 */
+a:hover{
+    background-position: 56px 0;        /* 设置雪碧图出现位置 */
+}
+
+
+/* 设置中间导航栏属性 */
+.header .nav-wrapper{
+    float: left;
+    margin-left: 7px;
+}
+
+/* 设置导航条 */
+.header .nav{
+    height: 100px;
+    line-height: 100px;
+    padding-left: 58px;
+}
+
+/* 设置文字样式 */
+.nav-wrapper li a{
+    font-size: 16px;
+    margin-left: 20px;
+    display: block;                     /* 转换成块元素，方便鼠标选择范围 */
+}
+
+/* 设置鼠标移入样式 */
+.nav-wrapper li a:hover{
+    color: #FF6700;
+}
+
+/* 隐藏全部商品文字 */
+.all-goods{
+    visibility: hidden;
+}
+
+/* 设置弹出层样式 */
+.nav .goods-info{
+    z-index: 9999;
+    /*height: 228px;*/
+    height: 0;                  /* 初始化隐藏图层 */
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    transition: height 0.3s;
+}
+
+/* 设置鼠标移入显示弹出层 */
+/* 兄弟选择器，选择后面全部的兄弟元素 */
+/* 分组选择器，挑选出禁止出现该样式的元素 */
+/* 第一种写法 */
+/*.nav li:not(:first-of-type):not(:nth-child(9)):not(:nth-child(10)):hover ~ .goods-info,*/
+/* 第二种写法 */
+.nav .show-goods:hover ~ .goods-info,
+.goods-info:hover{
+    height: 228px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgb(224, 224, 224);
+    background-color: #FF6700;
+}
+
+
+/* 设置左侧导航栏的各种样式 */
+/* 设置导航条里子元素的li浮动，其他后代元素不浮动 */
+.nav > li{
+    float: left;
+}
+
+/* 设置父元素，开启相对定位 */
+.all-goods-wrapper{
+    position: relative;
+}
+
+/* 设置全部商品分类的li标签样式，防止被别的地方设置的样式覆盖 */
+.all-goods-wrapper li a{
+    margin-left: 0;
+}
+
+/* 设置左侧导航条的样式 */
+.left-menu{
+    z-index: 999;
+    width: 234px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.6);       /* 设置一个透明的背景 */
+    position: absolute;                 /* 开启绝对定位 */
+    left: -121px;
+    line-height: 1;                     /* 设置一倍行距 */
+    padding: 20px 0;                    /* 设置上下内边距 */
+}
+
+.left-menu li{
+    margin: 0;
+}
+
+/* 设置超链接样式 */
+ul.left-menu li a{
+    display: block;                     /* 转换成块元素，方便鼠标选择范围 */
+    height: 42px;                       /* 设置每个超链接的行高 */
+    line-height: 42px;                  /* 使每个超链接居中 */
+    color: white;                       /* 设置文字颜色 */
+    padding: 0 30px;                    /* 设置左右内边框边距 */
+}
+
+/* 设置右侧小箭头样式 */
+.left-menu a i{
+    float: right;                       /* 设置浮动 */
+    line-height: 42px;                  /* 垂直居中排列 */
+}
+
+/* 设置鼠标移入特效 */
+ul.left-menu li a:hover{
+    color: white;
+    background-color: #FF6700;
+}
+
+
+/* 设置搜索框容器 */
+.search-wrapper{
+    width: 296px;                   /* 设置搜索框的大小 */
+    height: 50px;
+    float: right;                   /* 设置浮动，脱离文档流 */
+    margin-top: 25px;               /* 设置外边距，确定整个元素位置 */
+}
+
+/* 设置搜索文字框样式 */
+.search-wrapper .search-inp{
+    float: left;                    /* 设置浮动，脱离文档流 */
+    width: 220px;
+    height: 48px;
+    padding: 0 10px;                /* 设置内边距，确定元素位置 */
+    font-size: 16px;                /* 设置字体大小 */
+    border: 1px rgb(224, 224, 224) solid;   /* 设置边框 */
+    outline: none;                  /* 去除原本文字搜索框带有的轮廓线 */
+}
+
+/* 设置按钮框样式 */
+.search-wrapper .search-btn{
+    float: left;                    /* 设置浮动，脱离文档流 */
+    padding: 0;                     /* 设置内边距，删除多余边框距离产生的小差距 */
+    width: 52px;
+    height: 50px;
+    background-color: #FFFFFF;      /* 设置背景颜色 */
+    color: #616161;                 /* 设置字体颜色 */
+    font-size: 20px;                /* 设置字体大小 */
+    border: 1px rgb(224, 224, 224) solid;   /* 设置边框 */
+    border-left: none;                      /* 取消左边框，防止重合 */
+}
+
+/* 设置鼠标移入，按钮框变化样式 */
+.search-wrapper .search-btn:hover{
+    border: none;                   /* 取消边框，使背景颜色撑满元素块 */
+    color: white;                   /* 图标颜色 */
+    background-color: #FF6700;      /* 背景颜色 */
+}
+
+/* 设置input获取焦点后样式 */
+/* 设置搜索框及其兄弟元素按钮框的样式 */
+.search-wrapper .search-inp:focus,
+.search-wrapper .search-inp:focus + button{
+    border-color: #FF6700;
+}
+
+
+/* 设置banner样式 */
+/* 为banner开启相对定位，方便下面元素进行定位 */
+.banner{
+    position: relative;
+    height: 420px;                      /* 顶死高度，防止塌陷和子元素的定位 */
+}
+
+/* 为li标签设置绝对定位 */
+.banner .img-list li{
+    position: absolute;
+}
+
+/* 设置图片样式 */
+.banner img{
+    width: 100%;                        /* 设置图片宽度 */
+    height: 420px;                      /* 设置图片大高度 */
+    vertical-align: top;                /* 设置图片之间没有距离 */
+}
+
+/* 设置四个导航点的绝对定位 */
+.pointer{
+    position: absolute;
+    bottom: 22px;
+    right: 35px;
+}
+
+/* 设置四个导航点的a标签样式 */
+.pointer a{
+    float: left;                        /* 设置导航点浮动 */
+    width: 6px;                         /* 设置导航点的宽度 */
+    height: 6px;                        /* 设置导航点的高度 */
+    background-color: rgba(0, 0, 0, 0.4);           /* 设置导航点颜色 */
+    border: 2px solid rgba(255, 255, 255, 0.4);     /* 设置边框 */
+    border-radius: 50%;                 /* 设置圆角 */
+    margin-left: 6px;                   /* 设置导航点之间的间距 */
+}
+
+/* 设置鼠标移入，导航点变化 */
+.pointer a:hover,
+/* 设置默认导航点样式 */
+.pointer a.active{
+    border-color: rgba(0, 0, 0, 0.4);               /* 边框变化颜色 */
+    background-color: rgba(255, 255, 255, 0.4);     /* 导航点变化颜色 */
+}
+
+/* 设置图片右侧的小箭头样式（雪碧图） */
+.prev-next .prev{
+    width: 50px;                            /* 设置图片显示宽度 */
+    height: 88px;                           /* 设置图片显示高度 */
+    background-image: url("../image/左右箭头/左箭头.png");     /* 引入图片 */
+    background-position: -50px 0;            /* 设置需要展示图片的定位 */
+    background-repeat: no-repeat;           /* 设置图片为非平铺展示 */
+    position: absolute;                     /* 开启绝对定位 */
+    top: 0;                                 /* 设置偏移量 */
+    bottom: 0;
+    margin: auto;                           /* 设置水平居中 */
+    right: 0;                               /* 设置右边距 */
+}
+
+/* 设置图片左侧的小箭头样式（雪碧图） */
+.prev-next .next{
+    width: 50px;                            /* 设置图片显示宽度 */
+    height: 88px;                           /* 设置图片显示高度 */
+    background-image: url("../image/左右箭头/右箭头.png");     /* 引入图片 */
+    background-position: -50px 0;            /* 设置需要展示图片的定位 */
+    background-repeat: no-repeat;           /* 设置图片为非平铺展示 */
+    position: absolute;                     /* 开启绝对定位 */
+    top: 0;                                 /* 设置偏移量 */
+    bottom: 0;
+    margin: auto;                           /* 设置水平居中 */
+    left: 234px;                               /* 设置右边距 */
+}
+
+/* 设置左右两侧图片鼠标移入变换样式 */
+.prev-next .prev:hover,
+.prev-next .next:hover{
+    background-position: 0 0;               /* 设置图片定位 */
+}
+
+
+/* 创建右侧工具条 */
+.right-tools{
+    width: 60px;                            /* 设置总体宽度 */
+    height: 300px;                          /* 设置总体高度 */
+    position: fixed;                        /* 开启固定定位，相对于视口定位，不会随滚动条滚动而滚动 */
+    top: 180px;                             /*设置距离顶部距离，相对于视口，而不是全局 */
+    /* 下面两个结合使用 */
+    right: 50%;                             /* 将right值设置为视口宽度的50% */
+    margin-right: -673px;                   /* 一定为负值，中间宽度的一半（613）+本身宽度（60） */
+}
+
+/* 设置每个标签的样式 */
+.right-tools i{
+    display: block;                         /* 设置每个标签为块元素 */
+    width: 60px;                            /* 设置每个框的宽度 */
+    height: 60px;                           /* 设置每个框的高度 */
+    border: 1px solid rgb(245, 245, 245);   /* 设置边框样式 */
+}
+
+/* 设置图标的共同样式 */
+i.iconfont{
+    font-size: 40px;                        /* 设置图标大小 */
+    color: #999999;                         /* 设置图标颜色 */
+    text-align: center;                     /* 设置图标水平居中 */
+}
+
+
+/* 设置底部广告栏样式 */
+.bottom-wrapper{
+    margin-top: 15px;                       /* 设置上边距 */
+    height: 170px;                          /* 设置高度 */
+}
+
+/* 设置左侧超链接栏样式 */
+.bottom-wrapper .left-link{
+    float: left;                            /* 设置浮动 */
+    width: 232px;                           /* 设置宽度 */
+    height: 168px;                          /* 设置高度同父元素一致 */
+    background-color: #5F5750;              /* 设置背景颜色 */
+    margin-right: 2px;                      /* 设置右边距 */
+    padding-top: 2px;                       /* 方便设置边框 */
+    padding-left: 2px;
+}
+
+/* 设置超链接共同样式 */
+.bottom-wrapper .left-link a{
+    width: 76px;                            /* 设置元素框宽度 */
+    height: 84px;                           /* 设置元素框高度 */
+    display: block;                         /* 转换成款元素 */
+    float: left;                            /* 设置浮动 */
+    font-size: 16px;                        /* 设置字体大小 */
+    color: #adb1b1;                         /* 设置文字颜色 */
+    line-height: 83px;                      /* 设置垂直居中 */
+    text-align: center;                     /* 设置水平居中 */
+    position: relative;                     /* 开启相对定位，方便下面设置边框 */
+}
+
+/* 用伪元素选择器设置类似边框 */
+.bottom-wrapper .left-link a::before{
+    content: '';                            /* 设置需要填写的内容，此处为空 */
+    position: absolute;                     /* 开启相对定位 */
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 64px;                            /* 设置宽度 */
+    height: 1px;                            /* 设置高度 */
+    background-color: rgba(177, 177, 177, 0.3);     /* 设置颜色和透明度 */
+}
+.bottom-wrapper .left-link a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto 0;
+    width: 1px;
+    height: 70px;
+    background-color: rgba(177, 177, 177, 0.3);
+}
+
+/* 设置鼠标移入变换样式 */
+.bottom-wrapper .left-link a:hover{
+    color: #FFFFFF;                         /* 设置文字变换颜色 */
+    transition: color 0.3s;                 /* 设置变换速度 */
+}
+
+/* 设置右侧广告照片栏样式 */
+.bottom-wrapper .right-link a img{
+    width: 316px;                           /* 设置图片宽度 */
+    float: left;                            /* 设置图片浮动样式 */
+    margin-left: 14px;                      /* 设置左边距 */
+}

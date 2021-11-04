@@ -1,0 +1,12 @@
+/*
+    id选择器
+        作用：根据元素的id属性值选中一个元素
+        语法：#id属性值{}
+        例子：#abc{}  #def{} （abc和def是我们设置的id值）
+*/
+#abc{
+    color: red;
+}
+#def{
+    color: blue;
+}

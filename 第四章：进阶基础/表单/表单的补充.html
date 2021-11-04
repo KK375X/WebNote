@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+
+    <!--
+        autocomplete：自动补全功能，on为打开，off为关闭，放在form标签里，所有文本框都适用
+        readonly：设置成只读文本，不能修改其内容，数据会提交
+        disabled：设置成禁用，数据不会提交
+        autofocus：自动获取焦点
+    -->
+
+    <form action="./表单演示服务器.html">
+        文本框：<input type="text" name="username" value="hello" autocomplete="off">   <!-- 默认值是hello -->
+        <br><br>
+        文本框：<input type="text" name="username" readonly>
+        <br><br>
+        文本框：<input type="text" name="username" disabled>
+        <br><br>
+        文本框：<input type="text" name="username" autofocus>
+        <br><br>
+
+        提交按钮：<input type="submit">
+        <br><br>
+
+        <!--
+            普通按钮：仅仅可以点击，在没有js的帮助下不产生任何动作
+        -->
+        普通按钮：<input type="button" value="普通按钮">
+        <br><br>
+
+        <!--
+            重置按钮：将文本框里的内容重置
+        -->
+        重置按钮：<input type="reset">
+        <br><br>
+
+        <p>上述三种按钮的另一种写法：</p>
+        <button type="submit">提交</button>
+        <button type="button">普通按钮</button>
+        <button type="reset">重置</button>
+        <br><br>
+
+        <!--
+            色彩框
+        -->
+        色彩框：<input type="color">
+        <br><br>
+
+        <!--
+            电子邮件文本框：必须按照邮件格式才能提交
+        -->
+        电子邮件文本框：<input type="email">
+
+    </form>
+
+</body>
+</html>

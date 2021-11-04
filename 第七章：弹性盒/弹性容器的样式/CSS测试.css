@@ -1,0 +1,67 @@
+/*
+    - 弹性容器的属性
+        - flex-wrap：设置弹性元素是否在弹性容器中自动换行
+            - nowrap：默认值，元素不会自动换行
+            - wrap：元素沿着辅轴方向自动换行
+            - wrap-reverse：元素沿着辅轴的反方向换行
+
+        - justify-content：设置主轴上的元素排列方式
+            - flex-start：元素沿着主轴起边排列
+            - flex-end：元素沿着主轴终边排列
+            - center：元素居中排列
+            - space-around：空白分布到元素两边（类似于同时设置margin-left和margin-tight）
+            - space-between：空白均匀分布到元素间
+            - space-evenly：空白分布到元素的一侧（类似于仅设置margin-left或margin-right的一个）
+
+        - align-items：元素在辅轴上的对齐方式
+            - stretch：默认值，将元素的长度设置为相同的值
+            - flex-start：元素不会拉伸，沿着辅轴起边对齐
+            - flex-end：元素不会拉伸，沿着辅轴终边对齐
+            - center：居中对齐
+            - baseline：基线对齐
+
+        - align-content：设置辅轴在空白空间的分布
+            - flex-start：元素靠上对齐，空白在下面
+            - flex-end：元素靠下对齐，空白在上面
+            - center：元素上下的空白相等
+            - space-around：空白环绕在元素快周围
+            - space-between：元素分布靠近四周，空白分布中间
+*/
+
+/* 弹性容器 */
+ul{
+    width: 800px;
+    border: 10px #FF6700 solid;
+
+    display: flex;                  /* 设置为弹性容器 */
+
+    /* flex-wrap: nowrap;           设置自动换行 */
+    justify-content: space-between;
+}
+
+
+/* 弹性元素 */
+/* 设置li标签元素样式 */
+li{
+    width: 200px;                   /* 设置元素大小 */
+    height: 100px;
+    font-size: 50px;                /* 设置字体大小 */
+    text-align: center;             /* 设置文字水平居中 */
+    line-height: 100px;             /* 设置文字垂直居中 */
+
+    flex-shrink: 0;                 /* 设置缩短系数为零 */
+
+    align-self: stretch;            /* 用来覆盖当前弹性元素上的align-items */
+}
+
+li:nth-child(1){
+    background-color: #bbffaa;
+}
+
+li:nth-child(2){
+    background-color: #25a4bb;
+}
+
+li:nth-child(3){
+    background-color: yellow;
+}

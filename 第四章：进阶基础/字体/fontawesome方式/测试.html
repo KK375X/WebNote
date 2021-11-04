@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+
+    <!-- 引入图标字体库 -->
+    <link rel="stylesheet" href="fontawesome图标库/css/all.css">
+    <link rel="stylesheet" href="CSS测试.css">
+
+</head>
+<body>
+
+    <!--
+        fontawesome网站图标使用步骤
+            - 下载：直接去fontawesome官网
+            - 解压
+            - 将css和webfonts文件夹移动到项目中
+            - 将css文件夹中的all.css用link的方式引入到网页中
+            - 使用图标字体
+                - 直接通过类名去使用图标字体
+                - 由于该图标是矢量图，所以不会失真，并且可以设置css样式
+                - 举例：fas和fab是两个类型，必须要写，后面的是图标的名称
+                    class="fas fa-bell"
+                    class="fab fa-accessible-icon"
+
+    -->
+    <!-- 基础用法展示 -->
+    <i class="fas fa-bell"></i>
+    <i class="fab fa-accessible-icon"></i>
+    <!--
+        通过实体使用图标
+            语法：&#x图标的编码;
+    -->
+    <i class="fas">&#xf0f3;</i>
+    <br><br>
+
+    <!-- 文字用法展示 -->
+    <p>锄禾日当午</p>
+    <p>汗滴禾下土</p>
+    <p>谁知盘中餐</p>
+    <p>粒粒皆辛苦</p>
+
+</body>
+</html>

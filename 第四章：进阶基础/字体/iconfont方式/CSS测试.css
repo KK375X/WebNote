@@ -1,0 +1,18 @@
+/* 只显示图标的使用方法 */
+i.iconfont{
+    font-size: 100px;
+    color: red;
+}
+
+/* 结合文字的使用方法 */
+p{          /* 设置文字样式 */
+    font-size: 40px;
+    color: blue;
+}
+p::before{
+    content: '\e63d';       /* 添加图标编码 */
+    font-family: 'iconfont';/* 设置图标格式 */
+    font-size: 40px;
+    color: #25a4bb;
+    margin-right: 10px;     /* 设置右边距 */
+}

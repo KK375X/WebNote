@@ -1,0 +1,29 @@
+/* 渐变导航栏展示 */
+.box1{
+    width: 990px;
+    height: 520px;
+    margin: 0 auto;
+
+    /* 普通写法 */
+    /*
+    background-image: url("./渐变图片/渐变背景图片.jpg");     导入背景图片
+    background-repeat: repeat-x;        设置图片重复方式
+    */
+
+    /* 简写写法 */
+    background: url("渐变图片/渐变背景图片.jpg") repeat-x;
+}
+
+/* 图标不同状态展示 */
+a:link{     /* 待点击时图标状态 */
+    display: block;
+    width: 208px;
+    height: 72px;
+    background-image: url("不同状态图标/待点击图标.jpg");
+}
+a:hover{    /* 鼠标移入图标状态 */
+    background-image: url("不同状态图标/点击中图标.jpg");
+}
+a:active{   /* 点击完成时图标状态 */
+    background-image: url("不同状态图标/完成点击图标.jpg");
+}

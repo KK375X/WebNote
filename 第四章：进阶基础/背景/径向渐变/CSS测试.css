@@ -1,0 +1,37 @@
+/*
+    - radial-gradient()：径向渐变（呈放射性效果）
+        - 默认情况下，径向渐变的形状根据元素可视的区域来决定
+        - 基本用法和线性渐变的用法一样
+        - 可以手动指定径向渐变的大小
+            - circle：表示正圆，无论元素可视区域是不是正方形
+            - ellipse：默认值，元素可视区域为正方形就是圆，为长方形就是椭圆
+        - 可以指定元素的位置
+            - radial-gradient(大小 at 位置, 颜色 位置, 颜色 位置, 、、、)
+            - 大小：
+                - circle：圆形
+                - ellipse：椭圆
+                - closest-side：近边和元素可视区域贴合
+                - closest-cornet：近角和元素可视区域贴合
+                - farthest-side：远边和元素可视区域贴合
+                - farthest-cornet：远角和元素可视区域贴合
+            - 位置：
+                - center  top  left  bottom  right
+*/
+
+div{        /* 全部设置成浮动，方便观察 */
+    float: left;
+    margin-right: 5px;
+}
+
+.box1{
+    width: 500px;
+    height: 400px;
+    background-image: radial-gradient(circle, red, blue);
+}
+
+/* 设置径向渐变的位置 */
+.box2{
+    width: 500px;
+    height: 400px;
+    background-image: radial-gradient(at 100px 100px, red, blue);
+}

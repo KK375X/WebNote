@@ -1,0 +1,25 @@
+/* 基础用法展示 */
+i{
+    font-size: 100px;
+    color: red;
+}
+
+i:hover{
+    color: blue;
+}
+
+/*
+    通过伪元素设置图标字体
+        - 找到要设置图标的元素通过before或after选中
+        - 在content中设置图标的编码，需要转义
+        - 设置字体样式
+            - fas：font-family: 'Font Awesome 5 Free';
+            - fab：font-family: "Font Awesome 5 Brands"; font-wight: 900;
+*/
+p::before{
+    content: '\f1b0';       /* 图标编号，需要加转义符号 */
+    font-family: 'Font Awesome 5 Free';     /* 字体格式 */
+    font-weight: 900;       /* 设置图标大小 */
+    margin-right: 10px;      /* 设置右边距 */
+    color: #1963ca;         /* 图标颜色 */
+}

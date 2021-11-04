@@ -1,0 +1,68 @@
+.news{          /* 设置news容器的样式 */
+    width: 300px;           /* 设置容器的宽度 */
+    height: 400px;          /* 设置容器的高度 */
+
+    background-color: white;        /* 设置容器的背景颜色 */
+    padding-left: 10px;     /* 整个大容器向右移动 */
+}
+
+
+.x{             /* 设置最上方的横条 */
+    border-top: 5px #666666 solid;  /* 设置容器的上边框，方便与红色边框重合 */
+}
+
+
+.title{         /* 为h2标题容器设置样式 */
+    display: inline-block;  /* 为了使边框和文字的宽度一致，需要将h2转换成行内元素 */
+    height: 40px;           /* 设置文字的高度 */
+    border-top: 5px red solid;  /* 设置上边框样式 */
+    margin-top: -5px;        /* 设置外上边框，和灰色横条重合 */
+    text-decoration: none;  /* 去除下划线 */
+}
+.title a{       /*设置字体样式  */
+    font-size: 20px;        /* 字体大小 */
+    font-weight: bold;      /* 字体粗细 */
+    color: black;           /* 字体颜色 */
+}
+
+
+.news-photo{        /* 为图片容器设置样式 */
+    width: 300px;           /* 图片的宽度 */
+    height: 150px;          /* 图片的高度 */
+    margin-top: 25px;       /* 外边框上边距 */
+    overflow: hidden;       /* 隐藏放大后边缘区域 */
+}
+.photo p{       /* 设置图片上的标题 */
+    font-size: 16px;        /* 字体大小 */
+    font-weight: bold;      /* 字体粗细 */
+    color: white;           /* 字体颜色 */
+    padding-left: 15px;       /* 内边框左边距 */
+    margin-top: -25px;      /* 外边框上边距，向上移动 */
+}
+.photo img{     /* 设置图片过渡动画 */
+    transition: all 0.6s;   /* 设置图片放大的时间 */
+}
+.photo img:hover{   /* 设置鼠标移入图片样式 */
+    transform: scale(1.1); /* 鼠标移入，图片放大效果 */
+
+}
+
+
+.list-news{         /* 为新闻列表设置样式 */
+    margin-top: 25px;       /* 外边框上边距 */
+    /*padding-left: 15px;     !* 左内边距 *!*/
+}
+.list-news li{      /* 为内部的item设置样式 */
+    margin-bottom: 17px     /* 设置每行的行距 */
+}
+.item a::before{     /* 设置项目符号 */
+    content: '■ ';          /* 添加内容 */
+    color: rgba(166, 183, 203, 0.69);         /* 设置颜色 */
+}
+.item a{            /* 为文字设置样式 */
+    color: #666666;         /* 设置文字颜色 */
+    font-size: 14px;        /* 设置文字大小 */
+}
+.item a:hover{      /* 设置鼠标移入状态样式 */
+    color: red;
+}

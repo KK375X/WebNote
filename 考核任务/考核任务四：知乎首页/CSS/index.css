@@ -1,0 +1,572 @@
+/* 创建头部导航栏 */
+.top-wrapper{
+    width: 100%;
+    height: 52px;
+    background-color: white;
+    box-shadow: 0 0 2px #999999;
+    position: fixed;                    /* 固定定位 */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /*margin-top: -10px;*/
+}
+
+
+/* 创建头部内部容器 */
+.top-inner{
+    width: 1150px;
+    height: 52px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/* 设置左侧样式 */
+.top-wrapper .top-left-inner{
+    width: 360px;
+    height: 52px;
+    /*background-color: #000;*/
+    float: left;
+}
+
+.top-left-inner > div{
+    width: 64px;
+    line-height: 52px;
+    float: left;
+    margin-right: 10px;
+}
+.top-left-inner > div p{
+    font-size: 32px;
+    color: #0066FF;
+}
+
+.top-left-inner li div{
+    width: 30px;
+    line-height: 52px;
+    margin: auto 15px;
+    float: left;
+}
+.top-left-inner li div p{
+    font-size: 15px;
+    color: #8590A6;
+}
+.top-left-inner li:nth-child(1) div{
+    border-bottom: 4px solid #0066FF;
+    height: 48px;
+}
+.top-left-inner li:nth-child(4) div{
+    width: 60px;
+}
+
+
+
+.top-wrapper .top-middle-inner{
+    width: 480px;
+    height: 52px;
+    float: left;
+    margin-left: 50px;
+    line-height: 52px;
+}
+
+.top-middle-inner .search-inp{
+    height: 34px;
+    width: 380px;
+    border: #EBEBEB 1px solid;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 14px;
+    background-color: #F6F6F6;
+}
+.top-middle-inner i{
+    position: absolute;
+    left: 770px;
+    color: #8590A6;
+}
+.top-middle-inner .search-btn{
+    width: 60px;
+    height: 34px;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: #0066FF;
+    color: white;
+    border: none;
+}
+
+.top-middle-inner .search-btn:hover{
+    background-color: #005CE6;
+}
+
+
+
+
+.top-wrapper .top-right-inner{
+    width: 260px;
+    line-height: 52px;
+    float: left;
+}
+
+.top-right-inner a{
+    float: left;
+    margin-left: 56px;
+}
+.top-right-inner i{
+    font-size: 26px;
+    color: #8590A6;
+}
+.top-right-inner img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+/* 创建文本区域 */
+.text-wrapper{
+    width: 1000px;
+    height: 2000px;
+    /*background-color: silver;*/
+    margin: 60px auto 0;
+}
+
+
+
+/* 创建左侧区域 */
+.left-inner{
+    width: 700px;
+    height: 100%;
+    margin-right: 10px;
+    /*background-color: #bbffaa;*/
+    float: left;
+}
+
+
+
+/* 设置头部图片样式 */
+.left-inner > img{
+    width: 700px;
+    height: 96px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+
+
+/* 设置文本框导航栏样式 */
+.text-inner{
+    width: 700px;
+    height: 58px;
+    border-radius: 2px;
+    margin: 10px 0 1px 0;
+    border-bottom: 1px solid rgb(240, 242, 247);
+    background-color: #F6F6F6;
+}
+
+.text-inner div{
+    float: left;
+    width: 32px;
+    line-height: 58px;
+    margin: 0 22px;
+}
+.text-inner div a{
+    font-size: 16px;
+    color: #121212;
+}
+.text-inner div:nth-child(1) a{
+    font-size: 16px;
+    color: #0066FF;
+}
+
+
+
+/* 设置文本列表区域 */
+.text-list > li{
+    width: 660px;
+    height: 186px;
+    padding: 20px;
+    background-color: #F6F6F6;
+    position: relative;
+    margin-bottom: 1px;
+}
+
+/* 设置标题 */
+.text-list .title p{
+    font-size: 18px;
+    color: #121212;
+    margin-bottom: 10px;
+}
+
+/* 设置图片 */
+.text-list .text img{
+    float: left;
+    width: 190px;
+    height: 130px;
+    margin-right: 16px;
+}
+
+/* 设置右侧文字区域 */
+.text-list .text div{
+    width: 660px;
+    height: 130px;
+    margin-bottom: 8px;
+}
+.text-list .text div p{
+    font-size: 16px;
+    color: #000000;
+}
+.text-list .text div i{
+    font-size: 16px;
+    color: #175199;
+}
+
+/* 设置底部导航栏 */
+.text-list .text ul li{
+    width: 100px;
+    line-height: 36px;
+    float: left;
+}
+.text-list .text ul li i,
+.text-list .text ul li p{
+    float: left;
+    font-size: 14px;
+    color: #8590A6;
+    margin-right: 6px;
+}
+.text-list .text ul li:nth-child(1){
+    background-color: #E5EFFF;
+    border-right: 4px;
+    margin-right: 20px;
+}
+.text-list .text ul li:nth-child(1) i{
+    float: left;
+    font-size: 10px;
+    color: #0066FF;
+    margin: 0 6px 0 16px;
+}
+.text-list .text ul li:nth-child(1) p{
+    color: #0066FF;
+}
+
+
+
+
+
+/* 创建右侧区域 */
+.right-inner{
+    width: 290px;
+    height: 1140px;
+    float: left;
+}
+
+
+
+/* 设置第一个大盒子 */
+.first-box{
+    width: 288px;
+    height: 160px;
+    box-shadow: 0 0 5px silver;
+    border-radius: 2px;
+}
+.first-top-list{
+    width: 290px;
+    height: 110px;
+    border-bottom: 1px solid silver;
+}
+.first-top-list li{
+    width: 70px;
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+}
+.first-top-list li:nth-child(1){
+    margin-left: 5px;
+}
+.first-top-list li div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 0 10px 14px;
+}
+.first-top-list li i{
+    font-size: 20px;
+    line-height: 40px;
+}
+.first-top-list li p{
+    font-size: 12px;
+}
+.first-top-list li:nth-child(1) div{
+    background-color: #E1EDFF;
+}
+.first-top-list li:nth-child(2) div{
+    background-color: #FFF3E2;
+}
+.first-top-list li:nth-child(3) div{
+    background-color: #FEF9E2;
+}
+.first-top-list li:nth-child(4) div{
+    background-color: #E5F7F7;
+}
+.first-top-list li:nth-child(1) div i{
+    color: #0066FF;
+}
+.first-top-list li:nth-child(2) div i{
+    color: #FF9607;
+}
+.first-top-list li:nth-child(3) div i{
+    color: #F4C807;
+}
+.first-top-list li:nth-child(4) div i{
+    color: #26BFBF;
+}
+
+
+
+.first-box ul:nth-child(2) li{
+    width: 143px;
+    height: 50px;
+    float: left;
+    text-align: center;
+}
+.first-box ul:nth-child(2) li p{
+    line-height: 50px;
+}
+.first-box ul:nth-child(2) li:nth-child(1){
+    border-right: 1px solid silver;
+}
+
+
+
+
+/* 设置第二个大盒子 */
+.two-box{
+    width: 290px;
+    height: 52px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px silver;
+}
+
+.two-box div{
+    float: left;
+    width: 145px;
+    height: 52px;
+}
+
+.two-box div i,
+.two-box div p{
+    font-size: 16px;
+    float: left;
+    line-height: 52px;
+}
+.two-box div:nth-child(1) i{
+    margin: 0 6px 0 20px;
+}
+.two-box div:nth-child(2) p{
+    color: #0066FF;
+    margin: 0 0 0 60px;
+}
+
+
+
+
+/* 设置第三个大盒子 */
+.three-box{
+    width: 290px;
+    height: 225px;
+    box-shadow: 0 0 5px silver;
+    margin-top: 10px;
+}
+
+.three-box img{
+    width: 276px;
+    height: 44px;
+    margin: 7px;
+}
+
+.three-box ul{
+    width: 276px;
+    height: 160px;
+    margin: 3px 7px;
+
+}
+.three-box li{
+    float: left;
+    width: 92px;
+    height: 80px;
+    text-align: center;
+}
+.three-box li i{
+    margin-top: 10px;
+    width: 92px;
+    height: 40px;
+    float: left;
+    font-size: 30px;
+}
+.three-box li:nth-child(1) i{
+    color: #FFCF00;
+}
+.three-box li:nth-child(2) i{
+    color: #43D480;
+}
+.three-box li:nth-child(3) i{
+    color: #0066FF;
+}
+.three-box li:nth-child(4) i{
+    color: #0F88EB;
+}
+.three-box li:nth-child(5) i{
+    color: #5478F0;
+}
+.three-box li:nth-child(6) i{
+    color: #5868D1;
+}
+.three-box li p{
+    color: #8590A6;
+    width: 92px;
+    height: 16px;
+    float: left;
+    font-size: 16px;
+}
+
+
+/* 设置鼠标移入样式变换 */
+.three-box li:nth-child(1) a:hover p{
+    color: #FFCF00;
+}
+.three-box li:nth-child(2) a:hover p{
+    color: #43D480;
+}
+.three-box li:nth-child(3) a:hover p{
+    color: #0066FF;
+}
+.three-box li:nth-child(4) a:hover p{
+    color: #0F88EB;
+}
+.three-box li:nth-child(5) a:hover p{
+    color: #5478F0;
+}
+.three-box li:nth-child(6) a:hover p{
+    color: #5868D1;
+}
+
+
+
+
+
+/* 设置第四个盒子 */
+.four-box{
+    width: 290px;
+    height: 280px;
+    margin-top: 10px;
+    padding: 8px 0;
+    box-shadow: 0 0 5px silver;
+}
+
+.four-box li{
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.four-box li i{
+    font-size: 16px;
+    color: #8590A6;
+    float: left;
+    margin-left: 20px;
+}
+.four-box li p{
+    color: #8590A6;
+    margin-left: 10px;
+    font-size: 16px;
+    float: left;
+}
+
+
+
+
+/* 防止高度塌陷 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 设置第五个大盒子 */
+.five-box{
+    width: 290px;
+    height: 320px;
+    margin-top: 10px;
+}
+.five-box ul{
+    padding: 16px 0;
+}
+.five-box li{
+    float: left;
+}
+.five-box li a{
+    color: #959EB1;
+    font-size: 13px;
+}
+.line{
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: silver;
+    margin: 10px 5px;
+}
+
+
+
+/* 设置鼠标移入样式 */
+.five-box li a:hover{
+    color: #0066FF;
+}
+
+
+
+.top-left-inner ul li:nth-child(1) p{
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* 设置鼠标移入样式 */
+.four-box li:hover{
+    background-color: #F6F6F6;
+}
+
+.top-left-inner ul li:hover p{
+    color: #404040;
+}
+
+.top-right-inner a:hover i{
+    color: #747474;
+}
+
+.first-box ul:nth-child(2) li:hover p{
+    color: #000000;
+}
+
+.text-list a:nth-child(1):hover p{
+    color: #5868D1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

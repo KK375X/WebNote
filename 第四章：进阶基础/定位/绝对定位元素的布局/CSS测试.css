@@ -1,0 +1,53 @@
+/*
+    - 水平布局：
+        包含块内容区的宽度=（margin-left）+（border-left）+（padding-left）+（width）+（padding-right）+（border-right）+（margin-right）
+
+    - 绝对定位的布局：
+        - 水平布局的宽度=（left）+（margin-left）+（border-left）+（padding-left）+（width）+（padding-right）+（border-right）+（margin-right）+（right）
+        - 垂直布局的高度=（top）+（margin-top / bottom）+（padding-top / bottom）+（border-top / bottom）+（height）
+        - 当我们开启水平布局之后，宽度就需要加上 left 和 right 两个值，此时规则和之前一样
+        - 当发生过度约束：
+            - 如果9个值中没有auto，则会自动调整right值以使等式成立
+            - 如果右auto，则会自动调整auto的值以使等式成立
+            - 可以设置auto的值：margin、width、left和right
+
+        - 因为left和right的值默认是auto，所以如果不知道left和right，则等式不满足时，会自动调整这两个值
+
+*/
+
+.box1{
+    width: 500px;
+    height: 500px;
+    background-color: #25a4bb;
+
+    position: relative;     /* 设置成相对定位 */
+    overflow: hidden;       /* 设置溢出解决方法 */
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+
+    position: absolute;     /* 设置成绝对定位 */
+    /* 设置水平居中 */
+    left: 0;                /* 设置原点 */
+    right: 0;
+    margin-left: auto;      /* 设置左右自动调节属性 */
+    margin-right: auto;
+
+    /* 设置垂直居中 */
+    top: 0;                 /* 设置原点 */
+    bottom: 0;
+    margin-top: auto;       /* 设置上下自动调节边距属性 */
+    margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+

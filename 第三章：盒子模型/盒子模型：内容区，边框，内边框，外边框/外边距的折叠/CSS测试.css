@@ -1,0 +1,43 @@
+/*
+    垂直外边距的重叠（折叠）
+        - 相邻的垂直方向的外边距会发生重叠现象
+
+        - 兄弟元素之间：
+            - 兄弟元素之间的垂直外边距会取两者中较大值
+            - 相邻元素一正一负，则取两者的和
+            - 相邻元素都是负值，则取绝对值较大的
+
+        - 父子元素之间：
+            - 父子元素间的相邻外边距，子元素会传递给父元素（上外边距）
+            - 父子外边距会影响页面的布局，必须要进行处理
+
+*/
+/* 兄弟元素之间的展示 */
+.box1, .box2{
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+}
+.box1{
+    background-color: red;
+    /* 设置一个下外边距 */
+    margin-bottom: 100px;
+}
+.box2{
+    background-color: blue;
+    /* 设置一个上外边距 */
+    margin-top: 100px;
+}
+
+/* 父子元素之间的展示*/
+.box3{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin-top: 100px;
+}

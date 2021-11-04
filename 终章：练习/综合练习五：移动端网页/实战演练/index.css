@@ -1,0 +1,29 @@
+
+
+/* 设置根元素 */
+html{
+    font-size: 5.33333333vw;            /* 设置rem的比值 */
+    background-color: #eff0f4;
+}
+
+/* 设置头部header */
+.top-bar{
+    display: flex;                      /* 设置弹性容器 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

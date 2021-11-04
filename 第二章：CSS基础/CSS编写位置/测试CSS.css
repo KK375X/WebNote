@@ -1,0 +1,7 @@
+/* CSS语言的注释 */
+p{      /* 对所有body标签里的p标签生效 */
+    text-align: center;
+    background: aqua;
+    color: red;
+    font-size: 60px;
+}

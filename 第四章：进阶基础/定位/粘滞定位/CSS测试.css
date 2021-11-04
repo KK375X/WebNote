@@ -1,0 +1,56 @@
+body{
+    height: 1000px;
+}
+
+.item{      /* 设置容器的背景样式 */
+    width: 1210px;      /* 设置宽度 */
+    height: 48px;       /* 设置高度 */
+    background-color: #E8E7E3;  /* 背景颜色 */
+    margin: 100px auto;       /* 导航栏垂直居中 */
+
+    /*
+        - 粘滞定位
+            - 当元素的position属性值设置为sticky时，则开启了该元素的粘滞定位
+            - 粘滞定位和相对定位的特点基本一致，不同的是粘滞定位在到达一定高度后会将该元素固定
+    */
+    /* 开启粘滞定位 */
+    position: sticky;
+    top: 10px;      /* 当距离上方还有10px时，该元素固定 */
+}
+
+a {         /* 设置文字样式 */
+    display: block;         /* 转换成块元素 */
+    float: left;            /* 将全部超链接设置为浮动样式 */
+    line-height: 48px;      /* 设置导航类垂直居中 */
+    color: #898888;         /* 设置字体颜色 */
+    text-align: center;     /* 文字水平居中方式 */
+    text-decoration: none;  /* 去除超链接的下划线 */
+}
+
+a:hover{    /* 设置鼠标移入状态 */
+    background-color: #3F3F3F;
+    color: #CFCFCC;
+}
+
+/* 给每个超链接设置宽度和边框 */
+.HC{
+    width: 166px;
+}
+.BS{
+    width: 191px;
+}
+.SS{
+    width: 175px;
+}
+.P{
+    width: 198px;
+}
+.XML{
+    width: 113px;
+}
+.WB{
+    width: 197px;
+}
+.R{
+    width: 170px;
+}

@@ -1,0 +1,29 @@
+/*
+    旋转：可以使元素沿着x，y或z轴旋转指定的角度
+        - rotateX()：以X轴为旋转轴
+        - rotateY()：以Y轴为旋转轴
+        - rotateZ()：以Z轴为旋转轴
+        - backface-visibility：是否显示背面
+*/
+
+/* 设置当前网页的视距为800px，人眼距离网页的距离 */
+html{
+    perspective: 800px;         /* 设置视距 */
+}
+
+/* 设置鼠标移入网页，出现动画效果 */
+body:hover .box{
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);          /* 以X轴为旋转轴 */
+    /*transform: rotateY(90deg);*/
+    /*transform: rotateZ(90deg);*/
+    backface-visibility: visible;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #bbffaa;
+    margin: 200px auto;
+
+    transition: 2s;           /* 设置动画效果 */
+}

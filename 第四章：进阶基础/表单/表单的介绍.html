@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+
+    <link rel="stylesheet" href="./CSS测试.css">
+
+</head>
+<body>
+
+    <!--
+        表单：
+            - 使用form标签来创建一个表单
+
+        form属性：
+            - action：表单要提交的服务器地址
+    -->
+
+    <form action="表单演示服务器.html">
+        <!--
+            文本输入框：数据要提交到服务器中，必须要为元素指定一个name属性值
+        -->
+        文本框：<input type="text" name="数据提交文档">
+        <br><br>
+
+        <!--
+            密码框：数据要提交到服务器中，必须要为元素指定一个name属性值
+        -->
+        密码框：<input type="password" name="123456">
+        <br><br>
+
+        <!--
+            单选按钮
+                - 通过name属性分组，实现单选效果
+                - 像这种选择框，必须要指定一个value属性，value属性会作为用户填写的值传递给服务器
+                - checked：单选按钮设置为默认选中状态
+        -->
+        单选按钮：<input type="radio" name="单选组" value="a" checked>
+                 <input type="radio" name="单选组" value="b">
+        <br><br>
+
+        <!--
+            多选按钮
+                - 通过name属性分组，实现单选效果
+                - 像这种选择框，必须要指定一个value属性，value属性会作为用户填写的值传递给服务器
+                - checked：单选按钮设置为默认选中状态
+        -->
+        多选按钮：<input type="checkbox" name="多选组" value="1" checked>
+                 <input type="checkbox" name="多选组" value="2" checked>
+                 <input type="checkbox" name="多选组" value="3">
+                 <input type="checkbox" name="多选组" value="4">
+        <br><br>
+
+        <!--
+            下拉列表
+                - value：设置选中的需要提交的数据
+                - selected：设置默认选中项
+        -->
+        下拉列表：<select name="hello">
+            <option value="1">选项一</option>
+            <option selected value="2">选项二</option>
+            <option value="3">选项三</option>
+        </select>
+        <br><br>
+
+        <!--
+            提交按钮
+        -->
+        提交按钮：<input type="submit" value="提交">
+    </form>
+
+</body>
+</html>

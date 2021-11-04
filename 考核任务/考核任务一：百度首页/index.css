@@ -1,0 +1,367 @@
+/* 设置导航条样式 */
+.top-wrapper{
+    width: 100%;                    /* 设置导航栏宽度 */
+    height: 60px;                   /* 设置导航栏高度 */
+    position: relative;             /* 开启相对定位 */
+}
+
+
+/* 设置左侧导航栏样式 */
+.top-wrapper .left-list li{
+    line-height: 60px;              /* 设置元素垂直居中 */
+    float: left;                    /* 设置左浮动 */
+    margin-left: 30px;
+}
+
+/* 设置左侧导航栏文字样式 */
+.top-wrapper .left-list a{
+    font-size: 13px;
+    color: #222222;
+}
+
+/* 设置下拉框样式 */
+.left-list .more-list-wrapper .more-list{
+    width: 300px;                               /* 设置大小 */
+    height: 300px;
+    border-radius: 8px;                         /* 设置圆角 */
+    box-shadow: 0 0 12px rgb(204, 204, 204);    /* 设置阴影 */
+    position: absolute;                         /* 开启相对定位 */
+    top: 50px;
+    left: 180px;
+    display: none;                              /* 设置初始状态是隐藏 */
+    background-color: silver;
+}
+
+
+
+/* 设置右侧导航栏样式 */
+.top-wrapper .right-list div{
+    line-height: 60px;              /* 设置元素垂直居中 */
+    float: right;                   /* 设置左浮动 */
+    margin-right: 15px;             /* 设置左边距 */
+    font-size: 13px;                /* 设置字体大小 */
+    color: #222222;                 /* 设置字体颜色 */
+}
+
+/* 设置右侧导航栏文字样式 */
+.top-wrapper .right-list span{
+    width: 60px;                    /* 设置宽度 */
+    line-height: 30px;              /* 设置垂直居中 */
+    text-align: center;             /* 设置水平居中 */
+    float: left;                    /* 设置浮动 */
+    color: white;
+    margin: 16px;                   /* 设置边框距离 */
+    border-radius: 8px;             /* 设置圆角 */
+    background-color: #4E6EF2;
+}
+
+/* 设置下拉框样式 */
+.set-up .more-set-list{
+    width: 100px;
+    height: 180px;
+    border-radius: 8px;                         /* 设置圆角 */
+    box-shadow: 0 0 12px rgb(204, 204, 204);    /* 设置阴影 */
+    position: absolute;                         /* 开启相对定位 */
+    top: 50px;
+    right: 70px;
+    display: none;                              /* 设置下拉框初始状态 */
+    background-color: silver;
+}
+
+
+/* 设置鼠标移入样式 */
+.left-list a:hover,
+.set-up p:hover{
+    color: #315EFB;
+}
+
+/* 设置鼠标移入出现下拉框 */
+.more-list-wrapper:hover .more-list,
+.set-up:hover .more-set-list{
+    z-index: 9999;
+    display: block;                 /* 变成块元素 */
+}
+
+
+
+/* 设置中间搜索框 */
+.search-wrapper{
+    width: 700px;                   /* 设置大小 */
+    height: 500px;
+    margin: 0 auto;                 /* 设置左右边距 */
+}
+
+/* 设置文字及图标的位置 */
+.photo-words{
+    width: 224px;                   /* 设置大小 */
+    height: 100px;
+    margin: 0 auto;                 /* 设置垂直居中 */
+}
+
+/* 设置文字及图标的具体样式 */
+.photo-words h1{
+    float: left;                    /* 设置浮动 */
+    font-size: 50px;                /* 设置文字大小 */
+    color: red;
+    margin-top: 50px;              /* 设置上边距 */
+}
+.photo-words .iconfont{
+    float: left;                    /* 设置浮动 */
+    font-size: 50px;                /* 设置图标大小 */
+    color: blue;
+    margin-top: 50px;              /* 设置上边距 */
+}
+
+
+
+/* 设置搜索框位置 */
+.search-box{
+    width: 700px;
+    height: 100px;
+    /*background-color: #25a4bb;*/
+    margin: 20px auto;
+}
+
+/* 设置文本框样式 */
+.search-inp{
+    width: 590px;                   /* 设置搜索框大小 */
+    height: 35px;
+    float: left;                    /* 设置浮动 */
+    outline: none;                  /* 删除原本的边框 */
+    border: 2px #C4C7CE solid;      /* 设置边框颜色 */
+    border-right: none;             /* 取消右边框 */
+    border-radius: 8px 0 0 8px;     /* 设置圆角 */
+}
+
+.search{
+    position: relative;             /* 开启相对定位 */
+}
+/* 设置相机样式，利用定位*/
+.search .iconfont{
+    font-size: 20px;
+    color: #C4C7CE;
+    position: absolute;             /* 开启绝对定位 */
+    top: 10px;
+    right: 120px;
+}
+
+/* 设置按钮框样式 */
+.search-btn{
+    width: 100px;                   /* 设置大小 */
+    height: 41px;
+    float: left;                    /* 设置浮动 */
+    outline: none;                  /* 删除原本的边框 */
+    border: 2px #4E6EF2 solid;      /* 设置边框颜色 */
+    border-radius: 0 8px 8px 0;     /* 设置圆角 */
+    background-color: #4E6EF2;
+    font-size: 18px;                /* 设置字体大小 */
+    color: white;
+}
+
+/* 设置相机处下拉框样式 */
+.photo-list{
+    width: 120px;                               /* 设置大小 */
+    height: 36px;
+    border-radius: 8px;                         /* 设置圆角 */
+    box-shadow: 0 0 12px rgb(204, 204, 204);    /* 设置阴影 */
+    position: absolute;                         /* 开启相对定位 */
+    top: 50px;
+    right: 100px;
+    line-height: 36px;                          /* 文字垂直居中 */
+    text-align: center;                         /* 文字水平居中 */
+    display: none;                              /* 初始状态设为隐藏 */
+}
+
+/* 设置鼠标移动到相机，出现下拉框 */
+.iconfont:hover + .photo-list{
+    display: block;
+}
+
+/* 设置鼠标移动，文本框以及相机变化样式 */
+.iconfont:hover,
+.search-inp:hover{
+    border-color: #adb1b1;
+    color: #4E6EF2;
+}
+
+/* 设置鼠标获取焦点后样式 */
+.search-inp:focus{
+    border-color: #4E6EF2;                      /* 设置边框颜色 */
+    color: black;                               /* 设置文字颜色 */
+    font-size: 16px;                            /* 设置文字大小 */
+}
+
+
+
+/* 设置中间两个元素块样式 */
+.two-box{
+    width: 100%;                                /* 设置大小 */
+    height: 30px;
+    margin-top: -30px;                          /* 定位 */
+}
+
+/* 设置百度热榜样式 */
+.two-box .box1{
+    font-size: 20px;                            /* 设置大小 */
+    color: black;
+    float: left;                                /* 设置浮动 */
+}
+
+/* 设置换一换样式 */
+.two-box .box2{
+    font-size: 20px;                            /* 设置大小 */
+    color: #4E6EF2;
+    float: right;                               /* 设置浮动 */
+}
+
+
+
+/* 设置新闻列表块样式 */
+.news-wrapper{
+    width: 100%;                                /* 设置大小 */
+    height: 200px;
+}
+
+/* 设置左侧新闻列表 */
+.left-news{
+    width: 60%;                                 /* 设置大小 */
+    height: 150px;
+    float: left;                                /* 设置浮动 */
+}
+
+/* 设置右侧新闻列表 */
+.right-news{
+    width: 40%;                                 /* 设置大小 */
+    height: 150px;
+    float: right;                               /* 设置浮动 */
+}
+
+/* 设置标签的共同样式 */
+.news-wrapper li{
+    float: left;
+    line-height: 20px;
+    width: 100%;                                /* 设置大小 */
+    margin: 10px 0 20px 5px;                    /* 设置标签间距离 */
+}
+.news-wrapper a{
+    font-size: 16px;
+    color: #000;
+    margin-left: 10px;
+    float: left;
+}
+.left-news li i,
+.right-news li i{
+    color: #9195A3;
+    float: left;
+}
+.left-news li:nth-child(1) i{
+    color: #FE2D46;
+}
+.left-news li:nth-child(2) i{
+    color: #FF6600;
+}
+.left-news li:nth-child(3) i{
+    color: #FAA90E;
+}
+
+/* 设置文字后面的小框框文字 */
+.left-news .hot{
+    width: 20px;                                /* 设置文字框大小 */
+    height: 20px;
+    text-align: center;                         /* 设置垂直居中 */
+    line-height: 20px;                          /* 设置水平居中 */
+    color: white;
+    font-size: 12px;
+    background-color: #FF6700;
+    border-radius: 8px;                         /* 设置圆角 */
+}
+.left-news .listen{
+    width: 20px;                                /* 设置文字框大小 */
+    height: 20px;
+    text-align: center;                         /* 设置垂直居中 */
+    line-height: 20px;                          /* 设置水平居中 */
+    color: white;
+    font-size: 12px;
+    background-color: #ff2f64;
+    border-radius: 8px;                         /* 设置圆角 */
+}
+
+/* 设置鼠标移入样式 */
+.news-wrapper a:hover{
+    color: #4E6EF2;
+}
+
+
+
+/* 设置侧边栏 */
+.side-list{
+    width: 50px;                                /* 设置大小 */
+    height: 100px;
+    position: fixed;                            /* 开启固定定位 */
+    bottom: 100px;
+    right: 30px;
+}
+
+/* 设置图标样式 */
+.side-list div{
+    width: 60px;                                /* 设置大小 */
+    height: 60px;
+    text-align: center;                         /* 设置水平居中 */
+    line-height: 60px;                          /* 设置垂直居中 */
+    color: #626675;
+    font-size: 25px;
+    /*border-radius: 50%;                         !* 设置圆角 *!*/
+    /*box-shadow: 0 0 10px rgb(224, 224, 224);    !* 设置阴影 *!*/
+}
+
+
+
+/* 设置底部导航栏样式 */
+.bottom-wrapper{
+    width: 100%;                                /* 设置大小 */
+    height: 40px;
+    position: absolute;                         /* 开启绝对定位 */
+    bottom: 0;                                  /* 定位在底部 */
+}
+
+/* 设置导航条样式 */
+.bottom-inner{
+    width: 83%;                                 /* 设置大小 */
+    height: 40px;
+    margin: 0 auto;                             /* 设置居中 */
+}
+
+/* 设置每个标签的自动增长系数 */
+.bottom-inner li{
+    float: left;                                /* 设置为浮动 */
+    margin: auto 12px;                          /* 设置左右边距 */
+}
+
+/* 设置文字样式 */
+.left-bottom a,
+.right-bottom p{
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+/* 设置鼠标移入样式 */
+.left-bottom a:hover{
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
